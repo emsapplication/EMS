@@ -1,0 +1,9 @@
+D:\EMS\Application\EMS\EMS.BusinessLogicLayer\bin\Debug\EMS.BusinessLogicLayer.dll
+D:\EMS\Application\EMS\EMS.BusinessLogicLayer\bin\Debug\EMS.BusinessLogicLayer.pdb
+D:\EMS\Application\EMS\EMS.BusinessLogicLayer\obj\Debug\EMS.BusinessLogicLayer.dll
+D:\EMS\Application\EMS\EMS.BusinessLogicLayer\obj\Debug\EMS.BusinessLogicLayer.pdb
+D:\EMS\Application\EMS\EMS.BusinessLogicLayer\bin\Debug\EMS.BusinessObjects.dll
+D:\EMS\Application\EMS\EMS.BusinessLogicLayer\bin\Debug\EMS.DataAccessLayer.dll
+D:\EMS\Application\EMS\EMS.BusinessLogicLayer\bin\Debug\EMS.BusinessObjects.pdb
+D:\EMS\Application\EMS\EMS.BusinessLogicLayer\bin\Debug\EMS.DataAccessLayer.pdb
+D:\EMS\Application\EMS\EMS.BusinessLogicLayer\obj\Debug\EMS.BusinessLogicLayer.csprojResolveAssemblyReference.cache
