@@ -14,3 +14,11 @@ D:\EMS\Application\EMS\EMS\src\main.js
 D:\EMS\Application\EMS\EMS\src\main.js.map
 D:\EMS\Application\EMS\EMS\src\app\app.component.spec.js
 D:\EMS\Application\EMS\EMS\src\app\app.component.spec.js.map
+D:\EMS\Application\EMS\EMS\src\app\app.component.js
+D:\EMS\Application\EMS\EMS\src\app\app.component.js.map
+D:\EMS\Application\EMS\EMS\src\app\app.module.js
+D:\EMS\Application\EMS\EMS\src\app\app.module.js.map
+D:\EMS\Application\EMS\EMS\src\main.js
+D:\EMS\Application\EMS\EMS\src\main.js.map
+D:\EMS\Application\EMS\EMS\src\app\app.component.spec.js
+D:\EMS\Application\EMS\EMS\src\app\app.component.spec.js.map
