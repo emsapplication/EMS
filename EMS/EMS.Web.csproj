@@ -4493,7 +4493,9 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="src\app\app.component.js" />
     <Content Include="src\app\app.component.spec.js" />
+    <Content Include="src\app\app.dashboard.component.html" />
     <Content Include="src\app\app.module.js" />
+    <Content Include="src\app\app.resource.component.html" />
     <Content Include="src\dashboard.html" />
     <Content Include="src\favicon.ico" />
     <Content Include="src\index.html" />
@@ -4523,6 +4525,7 @@
     <Content Include="src\app\app.module.js.map" />
     <Content Include="src\main.js.map" />
     <Content Include="src\tsconfig.json" />
+    <Content Include="src\app\app.component.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -4548,7 +4551,10 @@
     <TypeScriptCompile Include="Content\vendors\moment\moment.d.ts" />
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
+    <TypeScriptCompile Include="src\app\app.dashboard.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\app.resource.component.ts" />
+    <TypeScriptCompile Include="src\app\app.routing.module.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
   <ItemGroup>

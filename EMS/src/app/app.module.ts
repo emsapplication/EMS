@@ -1,11 +1,44 @@
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+//import { NgModule }      from '@angular/core';
+//import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent }  from './app.component';
+//import { AppComponent }  from './app.component';
+
+//@NgModule({
+//  imports:      [ BrowserModule ],
+//  declarations: [ AppComponent ],
+//  bootstrap:    [ AppComponent ]
+//})
+//export class AppModule { }
+
+
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+import { DashboardComponent } from './app.dashboard.component';
+import { ResourceComponent } from './app.resource.component';
+
+import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
-  imports:      [ BrowserModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+    imports: [
+        BrowserModule,
+        FormsModule,
+        AppRoutingModule
+    ],
+    declarations: [
+        AppComponent,
+        DashboardComponent,
+        ResourceComponent
+    ],   
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+/*
+Copyright 2017 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

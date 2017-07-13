@@ -1,4 +1,3 @@
-//import { Component } from '@angular/core';
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -6,29 +5,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-//@Component({
-//  selector: 'my-app',
-//  template: `<h1>Hello {{name}}</h1>`,
-//})
-//export class AppComponent  { name = 'Angular'; }
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'Tour of Heroes';
+var DashboardComponent = (function () {
+    function DashboardComponent(heroService) {
+        this.heroService = heroService;
+        this.heroes = [];
     }
-    return AppComponent;
+    return DashboardComponent;
 }());
-AppComponent = __decorate([
+DashboardComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        templateUrl: './app.component.html',
-    })
-], AppComponent);
-exports.AppComponent = AppComponent;
+        selector: 'my-dashboard',
+        templateUrl: './dashboard.component.html',
+    }),
+    __metadata("design:paramtypes", [Object])
+], DashboardComponent);
+exports.DashboardComponent = DashboardComponent;
 /*
 Copyright 2017 Google Inc. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at http://angular.io/license
-*/
-//# sourceMappingURL=app.component.js.map
+*/ 
+//# sourceMappingURL=dashboard.js.map

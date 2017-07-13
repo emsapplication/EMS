@@ -1,0 +1,40 @@
+﻿<ul class="nav side-menu">
+    <li><a href="index.html"><i class="fa fa-home"></i> Home </a> </li>
+    <li><a routerLink="/dashboard" routerLinkActive="active"><i class="fa fa-newspaper-o"></i> Dashboard</a> </li>
+    <li><a routerLink="/resource" routerLinkActive="active"><i class="fa fa-newspaper-o"></i> Resource</a> </li>
+    <li><a href="Home.html"><i class="fa fa-dollar"></i> Account Details</a> </li>
+    <li><a href="Home.html"><i class="fa fa-list"></i> Project Details</a> </li>
+    <li><a href="Home.html"><i class="fa fa-slideshare"></i> Resource Allocation</a> </li>
+    <li>
+        <a><i class="fa fa-edit"></i> Supplementary <span class="fa fa-chevron-down"></span></a>
+        <ul class="nav child_menu">
+            <li><a href="form.html">Location</a></li>
+            <li><a href="form_advanced.html">Designation</a></li>
+            <li><a href="form_validation.html">Shift Detail</a></li>
+            <li><a href="form_wizards.html">Project Role</a></li>
+            <li><a href="form_upload.html">Status</a></li>
+            <li><a href="form_buttons.html">Verticals</a></li>
+            <li><a href="form_buttons.html">Skill Family</a></li>
+            <li><a href="form_buttons.html">Competency</a></li>
+            <li><a href="form_buttons.html">Sub Competency</a></li>
+            <li><a href="form_buttons.html">Vacation Type</a></li>
+        </ul>
+    </li>
+    <li>
+        <a><i class="fa fa-desktop"></i> Vacation <span class="fa fa-chevron-down"></span></a>
+        <ul class="nav child_menu">
+            <li><a href="general_elements.html">Vacation Request</a></li>
+            <li><a href="media_gallery.html">Vacation Requested</a></li>
+            <li><a href="typography.html">Leave Calendar</a></li>
+            <li><a href="icons.html">Vacation History</a></li>
+        </ul>
+    </li>
+    <li>
+        <a><i class="fa fa-bar-chart"></i> Reports <span class="fa fa-chevron-down"></span></a>
+        <ul class="nav child_menu">
+            <li><a href="tables.html">Reports 1</a></li>
+            <li><a href="tables_dynamic.html">Reports 2</a></li>
+        </ul>
+    </li>
+</ul>
+<router-outlet></router-outlet>

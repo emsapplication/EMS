@@ -1,3 +1,5 @@
+//import { NgModule }      from '@angular/core';
+//import { BrowserModule } from '@angular/platform-browser';
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -6,9 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+//import { AppComponent }  from './app.component';
+//@NgModule({
+//  imports:      [ BrowserModule ],
+//  declarations: [ AppComponent ],
+//  bootstrap:    [ AppComponent ]
+//})
+//export class AppModule { }
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
+var app_dashboard_component_1 = require("./app.dashboard.component");
+var app_resource_component_1 = require("./app.resource.component");
+var app_routing_module_1 = require("./app.routing.module");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -16,10 +29,23 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [app_component_1.AppComponent],
+        imports: [
+            platform_browser_1.BrowserModule,
+            forms_1.FormsModule,
+            app_routing_module_1.AppRoutingModule
+        ],
+        declarations: [
+            app_component_1.AppComponent,
+            app_dashboard_component_1.DashboardComponent,
+            app_resource_component_1.ResourceComponent
+        ],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
 exports.AppModule = AppModule;
+/*
+Copyright 2017 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/ 
 //# sourceMappingURL=app.module.js.map

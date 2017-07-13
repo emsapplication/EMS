@@ -1,4 +1,3 @@
-//import { Component } from '@angular/core';
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -7,28 +6,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-//@Component({
-//  selector: 'my-app',
-//  template: `<h1>Hello {{name}}</h1>`,
-//})
-//export class AppComponent  { name = 'Angular'; }
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var ResourceComponent = (function () {
+    function ResourceComponent() {
         this.title = 'Tour of Heroes';
     }
-    return AppComponent;
+    return ResourceComponent;
 }());
-AppComponent = __decorate([
+ResourceComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        templateUrl: './app.component.html',
+        selector: 'my-resource',
+        templateUrl: './app.resource.component.html'
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
+], ResourceComponent);
+exports.ResourceComponent = ResourceComponent;
 /*
 Copyright 2017 Google Inc. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at http://angular.io/license
-*/
-//# sourceMappingURL=app.component.js.map
+*/ 
+//# sourceMappingURL=app.resource.component.js.map

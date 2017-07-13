@@ -1,4 +1,3 @@
-//import { Component } from '@angular/core';
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -7,28 +6,30 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-//@Component({
-//  selector: 'my-app',
-//  template: `<h1>Hello {{name}}</h1>`,
-//})
-//export class AppComponent  { name = 'Angular'; }
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'Tour of Heroes';
+var router_1 = require("@angular/router");
+var app_dashboard_component_1 = require("./app.dashboard.component");
+var app_resource_component_1 = require("./app.resource.component");
+var routes = [
+    { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+    { path: 'dashboard', component: app_dashboard_component_1.DashboardComponent },
+    { path: 'resource', component: app_resource_component_1.ResourceComponent }
+];
+var AppRoutingModule = (function () {
+    function AppRoutingModule() {
     }
-    return AppComponent;
+    return AppRoutingModule;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app',
-        templateUrl: './app.component.html',
+AppRoutingModule = __decorate([
+    core_1.NgModule({
+        imports: [router_1.RouterModule.forRoot(routes)],
+        exports: [router_1.RouterModule]
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
+], AppRoutingModule);
+exports.AppRoutingModule = AppRoutingModule;
 /*
 Copyright 2017 Google Inc. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at http://angular.io/license
-*/
-//# sourceMappingURL=app.component.js.map
+*/ 
+//# sourceMappingURL=app.routing.module.js.map
