@@ -11,7 +11,7 @@ var router_1 = require("@angular/router");
 var app_dashboard_component_1 = require("./app.dashboard.component");
 var app_resource_component_1 = require("./app.resource.component");
 var routes = [
-    { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+    { path: '', redirectTo: '/dashboard' },
     { path: 'dashboard', component: app_dashboard_component_1.DashboardComponent },
     { path: 'resource', component: app_resource_component_1.ResourceComponent }
 ];
