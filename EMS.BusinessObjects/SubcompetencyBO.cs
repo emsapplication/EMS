@@ -1,6 +1,6 @@
 ﻿namespace EMS.BusinessObjects
 {
-    public class SubcompetencyBO
+    public class SubcompetencyBO : BaseBO
     {
 
         public int SubcompetencyId { get; set; }
