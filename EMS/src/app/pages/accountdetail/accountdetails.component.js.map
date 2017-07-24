@@ -1,0 +1,1 @@
+{"version":3,"file":"accountdetails.component.js","sourceRoot":"","sources":["accountdetails.component.ts"],"names":[],"mappings":";;;;;;;;;;;AAAA,sCAA0C;AAO1C,IAAa,uBAAuB;IAElC;IACA,CAAC;IAEH,8BAAC;AAAD,CAAC,AALD,IAKC;AALY,uBAAuB;IALnC,gBAAS,CAAC;QACT,QAAQ,EAAE,gBAAgB;QAC1B,SAAS,EAAE,CAAC,uBAAuB,CAAC;QACpC,WAAW,EAAE,uBAAuB;KACrC,CAAC;;GACW,uBAAuB,CAKnC;AALY,0DAAuB"}

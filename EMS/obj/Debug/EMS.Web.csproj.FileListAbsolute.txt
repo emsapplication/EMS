@@ -1,3 +1,4 @@
+D:\EMS\Application\EMS\EMS\obj\Debug\EMS.Web.csprojResolveAssemblyReference.cache
 D:\EMS\Application\EMS\EMS\bin\ApplicationInsights.config
 D:\EMS\Application\EMS\EMS\bin\roslyn\csc.exe
 D:\EMS\Application\EMS\EMS\bin\roslyn\csc.exe.config
@@ -72,6 +73,5 @@ D:\EMS\Application\EMS\EMS\bin\Microsoft.AI.DependencyCollector.xml
 D:\EMS\Application\EMS\EMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\EMS\Application\EMS\EMS\bin\Microsoft.AI.WindowsServer.xml
 D:\EMS\Application\EMS\EMS\bin\Microsoft.AI.Web.xml
-D:\EMS\Application\EMS\EMS\obj\Debug\EMS.Web.csprojResolveAssemblyReference.cache
 D:\EMS\Application\EMS\EMS\obj\Debug\EMS.dll
 D:\EMS\Application\EMS\EMS\obj\Debug\EMS.pdb

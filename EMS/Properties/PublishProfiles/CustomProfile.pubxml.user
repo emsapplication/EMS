@@ -1,0 +1,2881 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\EMSFTP</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include=".angular-cli.json">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include=".editorconfig">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="ApplicationInsights.config">
+      <publishTime>07/11/2017 19:07:33</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/HelpPage.css">
+      <publishTime>07/11/2017 19:07:30</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Api.cshtml">
+      <publishTime>07/11/2017 19:07:30</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.cshtml">
+      <publishTime>07/11/2017 19:07:30</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/CollectionModelDescription.cshtml">
+      <publishTime>07/11/2017 19:07:30</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ComplexTypeModelDescription.cshtml">
+      <publishTime>07/11/2017 19:07:30</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/DictionaryModelDescription.cshtml">
+      <publishTime>07/11/2017 19:07:30</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/EnumTypeModelDescription.cshtml">
+      <publishTime>07/11/2017 19:07:30</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/HelpPageApiModel.cshtml">
+      <publishTime>07/11/2017 19:07:30</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ImageSample.cshtml">
+      <publishTime>07/11/2017 19:07:30</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/InvalidSample.cshtml">
+      <publishTime>07/11/2017 19:07:30</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/KeyValuePairModelDescription.cshtml">
+      <publishTime>07/11/2017 19:07:30</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ModelDescriptionLink.cshtml">
+      <publishTime>07/11/2017 19:07:29</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Parameters.cshtml">
+      <publishTime>07/11/2017 19:07:29</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Samples.cshtml">
+      <publishTime>07/11/2017 19:07:29</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/SimpleTypeModelDescription.cshtml">
+      <publishTime>07/11/2017 19:07:29</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/TextSample.cshtml">
+      <publishTime>07/11/2017 19:07:29</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Index.cshtml">
+      <publishTime>07/11/2017 19:07:29</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/ResourceModel.cshtml">
+      <publishTime>07/11/2017 19:07:29</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Shared/_Layout.cshtml">
+      <publishTime>07/11/2017 19:07:29</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Web.config">
+      <publishTime>07/11/2017 19:07:29</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/_ViewStart.cshtml">
+      <publishTime>07/11/2017 19:07:17</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>07/11/2017 19:07:33</publishTime>
+    </File>
+    <File Include="bin/EMS.BusinessLogicLayer.dll">
+      <publishTime>07/24/2017 16:11:43</publishTime>
+    </File>
+    <File Include="bin/EMS.BusinessLogicLayer.pdb">
+      <publishTime>07/24/2017 16:11:43</publishTime>
+    </File>
+    <File Include="bin/EMS.BusinessObjects.dll">
+      <publishTime>07/24/2017 16:11:41</publishTime>
+    </File>
+    <File Include="bin/EMS.BusinessObjects.pdb">
+      <publishTime>07/24/2017 16:11:41</publishTime>
+    </File>
+    <File Include="bin/EMS.dll">
+      <publishTime>07/24/2017 16:12:36</publishTime>
+    </File>
+    <File Include="bin/EMS.pdb">
+      <publishTime>07/24/2017 16:12:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>11/30/2016 16:07:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>12/07/2016 11:45:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>12/06/2016 15:15:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>12/07/2016 11:49:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>12/06/2016 15:09:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>12/13/2016 03:10:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>01/05/2012 11:08:46</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 04:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 04:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 04:03:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>09/10/2013 17:28:38</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>07/11/2017 19:07:23</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>07/11/2017 19:07:23</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>07/11/2017 19:07:17</publishTime>
+    </File>
+    <File Include="Controllers/images/american-express.png">
+      <publishTime>06/23/2017 03:53:14</publishTime>
+    </File>
+    <File Include="Controllers/images/cropper.jpg">
+      <publishTime>06/23/2017 03:53:14</publishTime>
+    </File>
+    <File Include="Controllers/images/img.jpg">
+      <publishTime>06/23/2017 03:53:14</publishTime>
+    </File>
+    <File Include="Controllers/images/inbox.png">
+      <publishTime>06/23/2017 03:53:14</publishTime>
+    </File>
+    <File Include="Controllers/images/mastercard.png">
+      <publishTime>06/23/2017 03:53:14</publishTime>
+    </File>
+    <File Include="Controllers/images/media.jpg">
+      <publishTime>06/23/2017 03:53:14</publishTime>
+    </File>
+    <File Include="Controllers/images/paypal.png">
+      <publishTime>06/23/2017 03:53:14</publishTime>
+    </File>
+    <File Include="Controllers/images/picture.jpg">
+      <publishTime>06/23/2017 03:53:14</publishTime>
+    </File>
+    <File Include="Controllers/images/prod-1.jpg">
+      <publishTime>06/23/2017 03:53:14</publishTime>
+    </File>
+    <File Include="Controllers/images/prod-2.jpg">
+      <publishTime>06/23/2017 03:53:14</publishTime>
+    </File>
+    <File Include="Controllers/images/prod-3.jpg">
+      <publishTime>06/23/2017 03:53:14</publishTime>
+    </File>
+    <File Include="Controllers/images/prod-4.jpg">
+      <publishTime>06/23/2017 03:53:14</publishTime>
+    </File>
+    <File Include="Controllers/images/prod-5.jpg">
+      <publishTime>06/23/2017 03:53:14</publishTime>
+    </File>
+    <File Include="Controllers/images/user.png">
+      <publishTime>06/23/2017 03:53:14</publishTime>
+    </File>
+    <File Include="Controllers/images/visa.png">
+      <publishTime>06/23/2017 03:53:14</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>07/11/2017 19:07:17</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>07/11/2017 19:07:23</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/11/2017 19:07:23</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>07/11/2017 19:07:23</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>07/11/2017 19:07:23</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/11/2017 19:07:17</publishTime>
+    </File>
+    <File Include="package.json">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/14/2017 18:51:42</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>07/11/2017 19:07:23</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>07/11/2017 19:07:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>07/11/2017 19:07:25</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>07/11/2017 19:07:25</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>07/11/2017 19:07:25</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>07/11/2017 19:07:30</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>07/11/2017 19:07:31</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>07/11/2017 19:07:31</publishTime>
+    </File>
+    <File Include="src/app/app.component.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/app.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/app.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/app.component.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/app.module.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/app.module.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/app.routing.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/app.routing.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/app.service.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/app.service.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/app.translation.module.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/app.translation.module.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/global.state.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/global.state.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/accountdetail/accountdetails.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/accountdetail/accountdetails.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/accountdetail/accountdetails.html">
+      <publishTime>07/20/2017 17:27:22</publishTime>
+    </File>
+    <File Include="src/app/pages/accountdetail/accountdetails.module.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/accountdetail/accountdetails.module.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/accountdetail/accountdetails.routing.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/accountdetail/accountdetails.routing.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/accountdetail/accountdetails.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/accountdetail/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/accountdetail/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/charts.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/charts.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/charts.module.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/charts.module.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/charts.routing.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/charts.routing.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/components/chartistJs/chartistJs.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/components/chartistJs/chartistJs.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/components/chartistJs/chartistJs.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/components/chartistJs/chartistJs.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/components/chartistJs/chartistJs.service.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/components/chartistJs/chartistJs.service.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/components/chartistJs/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/components/chartistJs/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/charts/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/components/components.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/components/components.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/components/components.module.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/components/components.module.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/components/components.routing.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/components/components.routing.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/components/components.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/components/components/treeView/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/components/components/treeView/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/components/components/treeView/treeView.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/components/components/treeView/treeView.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/components/components/treeView/treeView.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/components/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/components/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/calendar/calendar.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/calendar/calendar.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/calendar/calendar.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/calendar/calendar.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/calendar/calendar.service.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/calendar/calendar.service.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/calendar/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/calendar/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/dashboard.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/dashboard.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/dashboard.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/dashboard.module.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/dashboard.module.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/dashboard.routing.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/dashboard.routing.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/dashboard.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/feed/feed.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/feed/feed.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/feed/feed.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/feed/feed.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/feed/feed.service.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/feed/feed.service.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/feed/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/feed/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/lineChart/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/lineChart/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/lineChart/lineChart.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/lineChart/lineChart.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/lineChart/lineChart.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/lineChart/lineChart.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/lineChart/lineChart.service.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/lineChart/lineChart.service.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/pieChart/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/pieChart/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/pieChart/pieChart.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/pieChart/pieChart.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/pieChart/pieChart.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/pieChart/pieChart.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/pieChart/pieChart.service.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/pieChart/pieChart.service.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/popularApp/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/popularApp/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/popularApp/popularApp.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/popularApp/popularApp.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/popularApp/popularApp.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/popularApp/popularApp.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/todo/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/todo/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/todo/todo.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/todo/todo.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/todo/todo.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/todo/todo.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/todo/todo.service.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/todo/todo.service.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/trafficChart/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/trafficChart/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/trafficChart/trafficChart.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/trafficChart/trafficChart.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/trafficChart/trafficChart.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/trafficChart/trafficChart.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/trafficChart/trafficChart.service.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/trafficChart/trafficChart.service.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/usersMap/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/usersMap/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/usersMap/usersMap.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/usersMap/usersMap.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/usersMap/usersMap.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/usersMap/usersMap.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/usersMap/usersMap.service.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/dashboard/usersMap/usersMap.service.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/components/ckeditor/ckeditor.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/components/ckeditor/ckeditor.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/components/ckeditor/ckeditor.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/components/ckeditor/ckeditor.loader.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/components/ckeditor/ckeditor.loader.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/components/ckeditor/ckeditor.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/components/ckeditor/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/components/ckeditor/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/editors.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/editors.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/editors.module.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/editors.module.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/editors.routing.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/editors.routing.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/editors/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/checkboxInputs/checkboxInputs.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/checkboxInputs/checkboxInputs.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/checkboxInputs/checkboxInputs.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/checkboxInputs/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/checkboxInputs/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/groupInputs/groupInputs.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/groupInputs/groupInputs.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/groupInputs/groupInputs.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/groupInputs/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/groupInputs/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/ratinginputs/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/ratinginputs/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/ratinginputs/ratinginputs.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/ratinginputs/ratinginputs.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/ratinginputs/ratinginputs.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/selectInputs/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/selectInputs/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/selectInputs/selectInput.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/selectInputs/selectInputs.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/selectInputs/selectInputs.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/selectInputs/selectInputs.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/standardInputs/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/standardInputs/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/standardInputs/standardInputs.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/standardInputs/standardInputs.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/standardInputs/standardInputs.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/validationInputs/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/validationInputs/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/validationInputs/validationInputs.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/validationInputs/validationInputs.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/components/validationInputs/validationInputs.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/inputs.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/inputs.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/inputs/inputs.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/basicForm/basicForm.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/basicForm/basicForm.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/basicForm/basicForm.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/basicForm/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/basicForm/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/blockForm/blockForm.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/blockForm/blockForm.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/blockForm/blockForm.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/blockForm/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/blockForm/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/horizontalForm/horizontalForm.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/horizontalForm/horizontalForm.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/horizontalForm/horizontalForm.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/horizontalForm/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/horizontalForm/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/inlineForm/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/inlineForm/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/inlineForm/inlineForm.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/inlineForm/inlineForm.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/inlineForm/inlineForm.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/inlineForm/inlineForm.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/withoutLabelsForm/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/withoutLabelsForm/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/withoutLabelsForm/withoutLabelsForm.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/withoutLabelsForm/withoutLabelsForm.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/components/withoutLabelsForm/withoutLabelsForm.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/layouts.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/layouts.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/components/layouts/layouts.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/forms.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/forms.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/forms.module.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/forms.module.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/forms.routing.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/forms.routing.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/forms/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/login/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/login/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/login/login.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/login/login.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/login/login.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/login/login.module.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/login/login.module.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/login/login.routing.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/login/login.routing.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/login/login.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/bubbleMaps/bubbleMaps.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/bubbleMaps/bubbleMaps.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/bubbleMaps/bubbleMaps.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/bubbleMaps/bubbleMaps.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/bubbleMaps/bubbleMaps.service.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/bubbleMaps/bubbleMaps.service.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/bubbleMaps/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/bubbleMaps/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/googleMaps/googleMaps.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/googleMaps/googleMaps.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/googleMaps/googleMaps.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/googleMaps/googleMaps.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/googleMaps/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/googleMaps/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/leafletMaps/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/leafletMaps/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/leafletMaps/leafletMaps.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/leafletMaps/leafletMaps.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/leafletMaps/leafletMaps.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/leafletMaps/leafletMaps.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/lineMaps/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/lineMaps/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/lineMaps/lineMaps.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/lineMaps/lineMaps.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/lineMaps/lineMaps.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/lineMaps/lineMaps.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/lineMaps/lineMaps.service.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/components/lineMaps/lineMaps.service.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/maps.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/maps.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/maps.module.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/maps.module.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/maps.routing.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/maps/maps.routing.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/pages.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/pages.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/pages.menu.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/pages.menu.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/pages.module.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/pages.module.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/pages.routing.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/pages.routing.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/register/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/register/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/register/register.component.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/register/register.component.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/register/register.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/register/register.module.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/register/register.module.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/register/register.routing.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/register/register.routing.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/register/register.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/basicTables.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/basicTables.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/basicTables.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/basicTables.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/basicTables.service.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/basicTables.service.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/borderedTable/borderedTable.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/borderedTable/borderedTable.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/borderedTable/borderedTable.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/borderedTable/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/borderedTable/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/condensedTable/condensedTable.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/condensedTable/condensedTable.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/condensedTable/condensedTable.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/condensedTable/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/condensedTable/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/contextualTable/contextualTable.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/contextualTable/contextualTable.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/contextualTable/contextualTable.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/contextualTable/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/contextualTable/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/hoverTable/hoverTable.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/hoverTable/hoverTable.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/hoverTable/hoverTable.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/hoverTable/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/hoverTable/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/responsiveTable/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/responsiveTable/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/responsiveTable/responsiveTable.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/responsiveTable/responsiveTable.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/responsiveTable/responsiveTable.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/stripedTable/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/stripedTable/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/stripedTable/stripedTable.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/stripedTable/stripedTable.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/components/stripedTable/stripedTable.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/basicTables/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/dataTables/data-filter.pipe.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/dataTables/data-filter.pipe.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/dataTables/dataTables.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/dataTables/dataTables.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/dataTables/dataTables.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/dataTables/dataTables.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/dataTables/dataTables.service.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/dataTables/dataTables.service.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/dataTables/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/dataTables/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable-section.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable-section.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/advanced-demo.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/advanced-demo.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/advanced-demo.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/basic-demo.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/basic-demo.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/basic-demo.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/data.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/data.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/finance-demo.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/finance-demo.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/finance-demo.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/science-demo.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/science-demo.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/science-demo.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/science-demo.service.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/science-demo.service.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/sheet-demo.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/sheet-demo.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/sheet-demo.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/sport-demo.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/sport-demo.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/handsontable/sport-demo.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/hotTables.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/hotTables.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/hotTables.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/hotTables/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/smartTables/index.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/smartTables/index.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/smartTables/smartTables.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/smartTables/smartTables.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/smartTables/smartTables.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/smartTables/smartTables.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/smartTables/smartTables.service.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/components/smartTables/smartTables.service.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/tables.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/tables.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/tables.module.js">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/tables.module.js.map">
+      <publishTime>07/24/2017 16:12:25</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/tables.routing.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/tables/tables.routing.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/buttons.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/buttons.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/buttons.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/buttons.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/disabledButtons/disabledButtons.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/disabledButtons/disabledButtons.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/disabledButtons/disabledButtons.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/disabledButtons/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/disabledButtons/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/dropdownButtons/dropdownButtons.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/dropdownButtons/dropdownButtons.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/dropdownButtons/dropdownButtons.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/dropdownButtons/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/dropdownButtons/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/flatButtons/flatButtons.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/flatButtons/flatButtons.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/flatButtons/flatButtons.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/flatButtons/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/flatButtons/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/groupButtons/groupButtons.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/groupButtons/groupButtons.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/groupButtons/groupButtons.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/groupButtons/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/groupButtons/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/iconButtons/iconButtons.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/iconButtons/iconButtons.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/iconButtons/iconButtons.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/iconButtons/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/iconButtons/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/largeButtons/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/largeButtons/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/largeButtons/largeButtons.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/largeButtons/largeButtons.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/largeButtons/largeButtons.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/raisedButtons/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/raisedButtons/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/raisedButtons/raisedButtons.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/raisedButtons/raisedButtons.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/raisedButtons/raisedButtons.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/sizedButtons/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/sizedButtons/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/sizedButtons/sizedButtons.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/sizedButtons/sizedButtons.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/components/sizedButtons/sizedButtons.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/buttons/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/grid/grid.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/grid/grid.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/grid/grid.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/grid/grid.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/grid/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/grid/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/icons/icons.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/icons/icons.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/icons/icons.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/icons/icons.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/icons/icons.service.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/icons/icons.service.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/icons/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/icons/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/modals/default-modal/default-modal.component.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/modals/default-modal/default-modal.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/modals/default-modal/default-modal.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/modals/default-modal/default-modal.component.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/modals/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/modals/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/modals/modals.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/modals/modals.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/modals/modals.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/modals/modals.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/slim/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/slim/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/slim/slim.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/slim/slim.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/slim/slim.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/slim/slim.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/typography/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/typography/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/typography/typography.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/typography/typography.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/components/typography/typography.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/ui.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/ui.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/ui.module.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/ui.module.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/ui.routing.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/pages/ui/ui.routing.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baAmChart/baAmChart.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baAmChart/baAmChart.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baAmChart/baAmChart.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baAmChart/baAmChart.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baAmChart/baAmChartTheme.service.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baAmChart/baAmChartTheme.service.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baAmChart/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baAmChart/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baBackTop/baBackTop.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baBackTop/baBackTop.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baBackTop/baBackTop.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baBackTop/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baBackTop/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCard/baCard.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCard/baCard.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCard/baCard.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCard/baCardBlur.directive.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCard/baCardBlur.directive.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCard/baCardBlurHelper.service.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCard/baCardBlurHelper.service.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCard/bgMetrics.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCard/bgMetrics.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCard/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCard/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baChartistChart/baChartistChart.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baChartistChart/baChartistChart.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baChartistChart/baChartistChart.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baChartistChart/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baChartistChart/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCheckbox/baCheckbox.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCheckbox/baCheckbox.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCheckbox/baCheckbox.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCheckbox/baCheckbox.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCheckbox/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baCheckbox/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baContentTop/baContentTop.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baContentTop/baContentTop.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baContentTop/baContentTop.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baContentTop/baContentTop.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baContentTop/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baContentTop/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baFileUploader/baFileUploader.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baFileUploader/baFileUploader.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baFileUploader/baFileUploader.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baFileUploader/baFileUploader.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baFileUploader/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baFileUploader/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baFullCalendar/baFullCalendar.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baFullCalendar/baFullCalendar.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baFullCalendar/baFullCalendar.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baFullCalendar/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baFullCalendar/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMenu/baMenu.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMenu/baMenu.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMenu/baMenu.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMenu/baMenu.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMenu/components/baMenuItem/baMenuItem.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMenu/components/baMenuItem/baMenuItem.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMenu/components/baMenuItem/baMenuItem.html">
+      <publishTime>07/20/2017 14:08:09</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMenu/components/baMenuItem/baMenuItem.scss">
+      <publishTime>07/18/2017 19:29:36</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMenu/components/baMenuItem/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMenu/components/baMenuItem/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMenu/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMenu/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMsgCenter/baMsgCenter.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMsgCenter/baMsgCenter.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMsgCenter/baMsgCenter.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMsgCenter/baMsgCenter.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMsgCenter/baMsgCenter.service.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMsgCenter/baMsgCenter.service.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMsgCenter/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMsgCenter/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMultiCheckbox/baMultiCheckbox.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMultiCheckbox/baMultiCheckbox.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMultiCheckbox/baMultiCheckbox.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMultiCheckbox/baMultiCheckbox.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMultiCheckbox/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baMultiCheckbox/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baPageTop/backgroundCGI.jpg">
+      <publishTime>07/18/2017 18:09:53</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baPageTop/baPageTop.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baPageTop/baPageTop.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baPageTop/baPageTop.html">
+      <publishTime>07/19/2017 16:55:48</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baPageTop/baPageTop.scss">
+      <publishTime>07/19/2017 14:48:45</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baPageTop/CGIlogo.jpg">
+      <publishTime>07/19/2017 16:39:50</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baPageTop/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baPageTop/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baPictureUploader/baPictureUploader.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baPictureUploader/baPictureUploader.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baPictureUploader/baPictureUploader.html">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baPictureUploader/baPictureUploader.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baPictureUploader/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baPictureUploader/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baSidebar/baSidebar.component.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baSidebar/baSidebar.component.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baSidebar/baSidebar.html">
+      <publishTime>07/18/2017 19:19:27</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baSidebar/baSidebar.scss">
+      <publishTime>07/20/2017 15:38:40</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baSidebar/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/baSidebar/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/components/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/directives/baScrollPosition/baScrollPosition.directive.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/directives/baScrollPosition/baScrollPosition.directive.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/directives/baScrollPosition/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/directives/baScrollPosition/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/directives/baSlimScroll/baSlimScroll.directive.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/directives/baSlimScroll/baSlimScroll.directive.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/directives/baSlimScroll/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/directives/baSlimScroll/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/directives/baThemeRun/baThemeRun.directive.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/directives/baThemeRun/baThemeRun.directive.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/directives/baThemeRun/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/directives/baThemeRun/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/directives/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/directives/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/nga.module.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/nga.module.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/pipes/baAppPicture/baAppPicture.pipe.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/pipes/baAppPicture/baAppPicture.pipe.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/pipes/baAppPicture/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/pipes/baAppPicture/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/pipes/baKameleonPicture/baKameleonPicture.pipe.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/pipes/baKameleonPicture/baKameleonPicture.pipe.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/pipes/baKameleonPicture/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/pipes/baKameleonPicture/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/pipes/baProfilePicture/baProfilePicture.pipe.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/pipes/baProfilePicture/baProfilePicture.pipe.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/pipes/baProfilePicture/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/pipes/baProfilePicture/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/pipes/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/pipes/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/bootstrap-overrides/overrides.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/bootstrap-overrides/_card.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/bootstrap-overrides/_dropdown.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/bootstrap-overrides/_tabs.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/conf/colorSchemes/_blur.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/conf/colorSchemes/_mint.scss">
+      <publishTime>07/19/2017 17:11:16</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/conf/colorSchemes/_ng2.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/conf/conf.scss">
+      <publishTime>07/18/2017 14:42:20</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/conf/_mixins.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/conf/_variables.scss">
+      <publishTime>07/20/2017 15:33:45</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/_auth.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/_buttons.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/_fonts.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/_form.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/_icons.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/_ionicons.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/_layout.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/_modal.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/_preloader.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/_socicon.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/_table.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/_treeView.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/sass/_typography.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baImageLoader/baImageLoader.service.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baImageLoader/baImageLoader.service.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baImageLoader/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baImageLoader/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baMenu/baMenu.service.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baMenu/baMenu.service.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baMenu/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baMenu/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baThemePreloader/baThemePreloader.service.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baThemePreloader/baThemePreloader.service.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baThemePreloader/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baThemePreloader/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baThemeSpinner/baThemeSpinner.service.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baThemeSpinner/baThemeSpinner.service.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baThemeSpinner/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/baThemeSpinner/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/services/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/theme.config.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/theme.config.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/theme.configProvider.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/theme.configProvider.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/theme.constants.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/theme.constants.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/theme.scss">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/app/theme/validators/email.validator.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/validators/email.validator.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/validators/equalPasswords.validator.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/validators/equalPasswords.validator.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/validators/index.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/app/theme/validators/index.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/assets/css/handsontable.css">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/fonts/socicon.eot">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/fonts/socicon.svg">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/fonts/socicon.ttf">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/fonts/socicon.woff">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/fonts/socicon.woff2">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/i18n/US/en.json">
+      <publishTime>07/20/2017 14:28:05</publishTime>
+    </File>
+    <File Include="src/assets/icon/android-icon-192x192.png">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/icon/apple-icon-114x114.png">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/icon/apple-icon-120x120.png">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/icon/apple-icon-144x144.png">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/icon/apple-icon-152x152.png">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/icon/apple-icon-180x180.png">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/icon/apple-icon-57x57.png">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/icon/apple-icon-60x60.png">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/icon/apple-icon-72x72.png">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/icon/apple-icon-76x76.png">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/icon/favicon-16x16.png">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/icon/favicon-32x32.png">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/icon/favicon-96x96.png">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/icon/ms-icon-144x144.png">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/76ers.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/blazers.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/bucks.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/bulls.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/cavaliers.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/celtic.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/clippers.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/hawks.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/heat.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/hornets.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/jazz.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/kings.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/knicks.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/lakers.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/magic.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/mavericks.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/memphis.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/nets.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/nuggets.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/orleans.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/pacers.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/pistons.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/raptors.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/rockets.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/spurs.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/suns.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/thunder.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/timberwolves.gif">
+      <publishTime>07/18/2017 13:42:11</publishTime>
+    </File>
+    <File Include="src/assets/images/warriors.gif">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/images/wizards.gif">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/browsers/chrome.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/browsers/firefox.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/browsers/ie.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/browsers/opera.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/browsers/safari.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/feed/genom.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/feed/my-little-kitten.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/feed/new-york-location.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/feed/vader-and-me-preview.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/my-app-logo.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/profile/CGIlogo.jpg">
+      <publishTime>07/19/2017 16:39:50</publishTime>
+    </File>
+    <File Include="src/assets/img/app/profile/CGIlogo.png">
+      <publishTime>07/19/2017 16:52:09</publishTime>
+    </File>
+    <File Include="src/assets/img/app/profile/Nasta.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/skin-thumbnails/01_default.jpg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/skin-thumbnails/02_transparent.jpg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/skin-thumbnails/03_blue.jpg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/skin-thumbnails/04_peachy.jpg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/skin-thumbnails/05_material.jpg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/skin-thumbnails/06_transblue.jpg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/todo/check-icon.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/typography/banner.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/typography/typo01.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/typography/typo03.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/typography/typo04.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/typography/typo05.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/typography/typo06.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/app/typography/typo07.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/arrow-green-up.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/arrow-red-down.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/blue-bg.jpg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/blur-bg-blurred.jpg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/blur-bg-mobile.jpg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/blur-bg.jpg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/chernika.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/comments.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/face.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/green-bg.jpg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/money.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/peachy-bg.jpg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/person.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/refresh.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/shopping-cart.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/sky-bg.jpg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/feed/feed-image.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/feed/feed-location.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/feed/feed-video.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Alien.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Analytics.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Apartment.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Batman.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Beach.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Bell.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Bonsai.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Boss-3.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Boss-5.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Burglar.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Bus.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Candy.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Checklist.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Cheese.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Chessboard.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Clipboard-Plan.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Desert.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Dna.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Euro-Coin.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Food-Dome.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Hacker.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Images.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Key.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Laptop-Signal.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Locked-Cloud.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Love-Letter.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Magician.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Makeup.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Medal-2.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Microscope.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Mind-Map-Paper.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Money-Increase.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Music-Equalizer.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Ninja.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Online-Shopping.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Pantone.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Party-Poppers.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Phone-Booth.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Programming.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Santa.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Shop.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Street-View.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Student-3.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Surfer.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Surgeon.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Tower.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/icon/kameleon/Vector.svg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/no-photo.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/palette.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/ammap/arrowDown.gif">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/ammap/arrowUp.gif">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/ammap/export.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/ammap/homeIcon.gif">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/ammap/homeIconWhite.gif">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/ammap/minus.gif">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/ammap/panDown.gif">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/ammap/panLeft.gif">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/ammap/panRight.gif">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/ammap/panUp.gif">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/ammap/plus.gif">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/ammap/xIcon.gif">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/ammap/xIconH.gif">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/leaflet/marker-icon-2x.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/leaflet/marker-icon.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/theme/vendor/leaflet/marker-shadow.png">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/assets/img/transblue-bg.jpg">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/environments/environment.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/environments/environment.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/environments/environment.prod.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/environments/environment.prod.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/favicon.ico">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/index.html">
+      <publishTime>07/21/2017 20:41:05</publishTime>
+    </File>
+    <File Include="src/main.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/main.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/meta/humans.txt">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/meta/robots.txt">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/polyfills.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/polyfills.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/styles.scss">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/systemjs-angular-loader.js">
+      <publishTime>04/27/2017 03:16:14</publishTime>
+    </File>
+    <File Include="src/systemjs.config.extras.js">
+      <publishTime>04/27/2017 03:16:14</publishTime>
+    </File>
+    <File Include="src/systemjs.config.js">
+      <publishTime>07/20/2017 20:06:01</publishTime>
+    </File>
+    <File Include="src/test.js">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/test.js.map">
+      <publishTime>07/24/2017 16:12:24</publishTime>
+    </File>
+    <File Include="src/tsconfig.app.json">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="src/tsconfig.spec.json">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="tsconfig.json">
+      <publishTime>07/21/2017 18:40:34</publishTime>
+    </File>
+    <File Include="tslint.json">
+      <publishTime>07/18/2017 13:42:12</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>07/11/2017 19:07:17</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>07/11/2017 19:07:17</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>07/11/2017 19:07:17</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>07/11/2017 19:07:17</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>07/11/2017 19:07:17</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/24/2017 16:12:55</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

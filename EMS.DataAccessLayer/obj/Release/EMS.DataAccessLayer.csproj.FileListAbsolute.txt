@@ -1,0 +1,7 @@
+D:\EMS\Application\EMS\EMS.DataAccessLayer\bin\Release\EMS.DataAccessLayer.dll
+D:\EMS\Application\EMS\EMS.DataAccessLayer\bin\Release\EMS.DataAccessLayer.pdb
+D:\EMS\Application\EMS\EMS.DataAccessLayer\bin\Release\EMS.BusinessObjects.dll
+D:\EMS\Application\EMS\EMS.DataAccessLayer\bin\Release\EMS.BusinessObjects.pdb
+D:\EMS\Application\EMS\EMS.DataAccessLayer\obj\Release\EMS.DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\EMS\Application\EMS\EMS.DataAccessLayer\obj\Release\EMS.DataAccessLayer.dll
+D:\EMS\Application\EMS\EMS.DataAccessLayer\obj\Release\EMS.DataAccessLayer.pdb

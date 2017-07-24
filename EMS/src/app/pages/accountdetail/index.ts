@@ -1,0 +1,1 @@
+export * from './accountdetails.component';
