@@ -30,8 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,15 +49,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountDetail.cs" />
+    <Compile Include="Competency.cs" />
     <Compile Include="CompetencyDAL.cs" />
+    <Compile Include="Designation.cs" />
+    <Compile Include="EMSDataModel.cs" />
     <Compile Include="ICommonDataAccess.cs" />
+    <Compile Include="LeaveType.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="ProjectDetail.cs" />
+    <Compile Include="ProjectRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceAllocation.cs" />
+    <Compile Include="ResourceDetail.cs" />
+    <Compile Include="ShiftDetail.cs" />
+    <Compile Include="SkillFamily.cs" />
+    <Compile Include="Status.cs" />
+    <Compile Include="Subcompetency.cs" />
+    <Compile Include="sysdiagram.cs" />
+    <Compile Include="VacationDetail.cs" />
+    <Compile Include="Vertical.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EMS.BusinessObjects\EMS.BusinessObjects.csproj">
       <Project>{4b22a3a4-8a2c-4ecb-82e1-501aa072e595}</Project>
       <Name>EMS.BusinessObjects</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EMS\DataAccessLayer\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
