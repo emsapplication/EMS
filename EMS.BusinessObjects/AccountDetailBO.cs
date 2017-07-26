@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace EMS.BusinessObjects
 {
@@ -7,6 +8,7 @@ namespace EMS.BusinessObjects
 
         public int AccountDetailId { get; set; }
 
+        [Required]
         public string AccountName { get; set; }
 
         public DateTime StartDate { get; set; }

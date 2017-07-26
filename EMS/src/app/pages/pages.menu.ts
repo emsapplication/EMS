@@ -1,4 +1,4 @@
-export const PAGES_MENU = [
+﻿export const PAGES_MENU = [
   {
     path: 'pages',
     children: [
@@ -70,7 +70,7 @@ export const PAGES_MENU = [
       },
 
       {
-        path: 'ui',
+        path: 'supplementary',
         data: {
           menu: {
             title: 'general.menu.supplementary',

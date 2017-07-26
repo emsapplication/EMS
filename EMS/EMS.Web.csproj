@@ -273,6 +273,13 @@
     <Content Include="src\app\pages\maps\components\leafletMaps\leafletMaps.html" />
     <Content Include="src\app\pages\maps\components\lineMaps\lineMaps.html" />
     <Content Include="src\app\pages\register\register.html" />
+    <Content Include="src\app\pages\supplementry\location\components\checkboxInputs\checkboxInputs.html" />
+    <Content Include="src\app\pages\supplementry\location\components\groupInputs\groupInputs.html" />
+    <Content Include="src\app\pages\supplementry\location\components\ratinginputs\ratinginputs.html" />
+    <Content Include="src\app\pages\supplementry\location\components\selectInputs\selectInputs.html" />
+    <Content Include="src\app\pages\supplementry\location\components\standardInputs\standardInputs.html" />
+    <Content Include="src\app\pages\supplementry\location\components\validationInputs\validationInputs.html" />
+    <Content Include="src\app\pages\supplementry\location\inputs.html" />
     <Content Include="src\app\pages\tables\components\basicTables\basicTables.html" />
     <Content Include="src\app\pages\tables\components\basicTables\components\borderedTable\borderedTable.html" />
     <Content Include="src\app\pages\tables\components\basicTables\components\condensedTable\condensedTable.html" />
@@ -576,6 +583,7 @@
     <Content Include="src\tsconfig.app.json" />
     <Content Include="src\tsconfig.spec.json" />
     <Content Include="tslint.json" />
+    <Content Include="src\app\pages\supplementry\location\components\selectInputs\selectInput.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -713,6 +721,24 @@
     <TypeScriptCompile Include="src\app\pages\register\register.component.ts" />
     <TypeScriptCompile Include="src\app\pages\register\register.module.ts" />
     <TypeScriptCompile Include="src\app\pages\register\register.routing.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\location\components\checkboxInputs\checkboxInputs.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\location\components\checkboxInputs\index.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\location\components\groupInputs\groupInputs.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\location\components\groupInputs\index.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\location\components\ratinginputs\index.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\location\components\ratinginputs\ratinginputs.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\location\components\selectInputs\index.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\location\components\selectInputs\selectInputs.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\location\components\standardInputs\index.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\location\components\standardInputs\standardInputs.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\location\components\validationInputs\index.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\location\components\validationInputs\validationInputs.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\location\index.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\location\inputs.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\supplementry.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\supplementry.module.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\supplementry.routing.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\index.ts" />
     <TypeScriptCompile Include="src\app\pages\tables\components\basicTables\basicTables.component.ts" />
     <TypeScriptCompile Include="src\app\pages\tables\components\basicTables\basicTables.service.ts" />
     <TypeScriptCompile Include="src\app\pages\tables\components\basicTables\components\borderedTable\borderedTable.component.ts" />

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="34c4f8464bb748c2b2ac2f8c6d26072d" Name="Diagram1">
+        <EntityTypeShape EntityType="EMSModel.AccountDetail" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EMSModel.Competency" Width="1.5" PointX="1.5" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EMSModel.Designation" Width="1.5" PointX="3.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EMSModel.LeaveType" Width="1.5" PointX="9" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EMSModel.Location" Width="1.5" PointX="3.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EMSModel.ProjectDetail" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EMSModel.ProjectRole" Width="1.5" PointX="11.25" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EMSModel.ResourceAllocation" Width="1.5" PointX="13.5" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EMSModel.ResourceDetail" Width="1.5" PointX="6" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EMSModel.ShiftDetail" Width="1.5" PointX="11.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EMSModel.SkillFamily" Width="1.5" PointX="1.5" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EMSModel.Status" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EMSModel.Subcompetency" Width="1.5" PointX="3.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EMSModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EMSModel.VacationDetail" Width="1.5" PointX="11.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EMSModel.Vertical" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="EMSModel.FK_AccountDetail_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_AccountDetail_Verticals" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_ProjectDetail_AccountDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_Competency_SkillFamily" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_Subcompetency_Competency" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_ResourceDetail_Designation" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_VacationDetails_LeaveType" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_ResourceDetail_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_ProjectDetail_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_ResourceAllocation_ProjectDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_ResourceAllocation_ProjectRole" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_ResourceAllocation_ResourceDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_ResourceAllocation_ShiftDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_ResourceAllocation_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_ResourceDetail_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_ResourceDetail_Subcompetency" ManuallyRouted="false" />
+        <AssociationConnector Association="EMSModel.FK_VacationDetails_ResourceDetail" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
