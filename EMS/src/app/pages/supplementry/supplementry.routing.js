@@ -7,7 +7,7 @@ var supplementry_component_1 = require("./supplementry.component");
 // noinspection TypeScriptValidateTypes
 var routes = [
     {
-        path: 'supplementary',
+        path: 'supplementary.location',
         component: supplementry_component_1.SupplementryComponent,
     }
 ];

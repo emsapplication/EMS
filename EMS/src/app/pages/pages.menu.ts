@@ -70,7 +70,7 @@
       },
 
       {
-        path: 'supplementary',
+        path: 'supplementry',
         data: {
           menu: {
             title: 'general.menu.supplementary',
@@ -82,7 +82,7 @@
         },
         children: [
           {
-            path: 'typography',
+            path: 'locationDetails',
             data: {
               menu: {
                  subicon: 'fa fa-arrow-circle-o-right',

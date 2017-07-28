@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AccountDetail">
+    <Key>
+      <PropertyRef Name="AccountDetailId" />
+    </Key>
+    <Property Name="AccountDetailId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="StartDate" Type="DateTime" Precision="0" />
+    <Property Name="StatusId" Type="Int32" />
+    <Property Name="EndDate" Type="DateTime" Precision="0" />
+    <Property Name="VerticalId" Type="Int32" />
+    <Property Name="Director" Type="Int32" />
+    <Property Name="SDM" Type="Int32" />
+    <Property Name="PM" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <NavigationProperty Name="Status" Relationship="Self.FK_AccountDetail_Status" FromRole="AccountDetail" ToRole="Status" />
+    <NavigationProperty Name="Vertical" Relationship="Self.FK_AccountDetail_Verticals" FromRole="AccountDetail" ToRole="Verticals" />
+    <NavigationProperty Name="ProjectDetails" Relationship="Self.FK_ProjectDetail_AccountDetail" FromRole="AccountDetail" ToRole="ProjectDetail" />
+  </EntityType>
+  <EntityType Name="Competency">
+    <Key>
+      <PropertyRef Name="CompetencyId" />
+    </Key>
+    <Property Name="CompetencyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SkillFamilyId" Type="Int32" />
+    <Property Name="Competency1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <NavigationProperty Name="SkillFamily" Relationship="Self.FK_Competency_SkillFamily" FromRole="Competency" ToRole="SkillFamily" />
+    <NavigationProperty Name="Subcompetencies" Relationship="Self.FK_Subcompetency_Competency" FromRole="Competency" ToRole="Subcompetency" />
+  </EntityType>
+  <EntityType Name="Designation">
+    <Key>
+      <PropertyRef Name="DesignationId" />
+    </Key>
+    <Property Name="DesignationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DesignationName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ShortDesignation" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <NavigationProperty Name="ResourceDetails" Relationship="Self.FK_ResourceDetail_Designation" FromRole="Designation" ToRole="ResourceDetail" />
+  </EntityType>
+  <EntityType Name="LeaveType">
+    <Key>
+      <PropertyRef Name="LeaveTypeId" />
+    </Key>
+    <Property Name="LeaveTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LeaveType1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <NavigationProperty Name="VacationDetails" Relationship="Self.FK_VacationDetails_LeaveType" FromRole="LeaveType" ToRole="VacationDetails" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="LocationId" />
+    </Key>
+    <Property Name="LocationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Location1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <NavigationProperty Name="ResourceDetails" Relationship="Self.FK_ResourceDetail_Location" FromRole="Location" ToRole="ResourceDetail" />
+  </EntityType>
+  <EntityType Name="ProjectDetail">
+    <Key>
+      <PropertyRef Name="ProjectDetailId" />
+    </Key>
+    <Property Name="ProjectDetailId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountDetailId" Type="Int32" />
+    <Property Name="ProjectID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ProjectDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="StatusId" Type="Int32" />
+    <Property Name="CGIProjectManager" Type="Int32" />
+    <Property Name="OnsiteProjectManager" Type="Int32" />
+    <Property Name="ReportingManager" Type="Int32" />
+    <Property Name="EDName" Type="Int32" />
+    <Property Name="GHName" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <NavigationProperty Name="AccountDetail" Relationship="Self.FK_ProjectDetail_AccountDetail" FromRole="ProjectDetail" ToRole="AccountDetail" />
+    <NavigationProperty Name="Status" Relationship="Self.FK_ProjectDetail_Status" FromRole="ProjectDetail" ToRole="Status" />
+    <NavigationProperty Name="ResourceAllocations" Relationship="Self.FK_ResourceAllocation_ProjectDetail" FromRole="ProjectDetail" ToRole="ResourceAllocation" />
+  </EntityType>
+  <EntityType Name="ProjectRole">
+    <Key>
+      <PropertyRef Name="ProjectRoleId" />
+    </Key>
+    <Property Name="ProjectRoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectRole1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ResourceAllocations" Relationship="Self.FK_ResourceAllocation_ProjectRole" FromRole="ProjectRole" ToRole="ResourceAllocation" />
+  </EntityType>
+  <EntityType Name="ResourceAllocation">
+    <Key>
+      <PropertyRef Name="ResourceAllocationId" />
+    </Key>
+    <Property Name="ResourceAllocationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ResourceDetailId" Type="Int32" />
+    <Property Name="ProjectDetailId" Type="Int32" />
+    <Property Name="DesignationId" Type="Int32" />
+    <Property Name="ProjectRoleId" Type="Int32" />
+    <Property Name="StartDate" Type="DateTime" Precision="0" />
+    <Property Name="EndDate" Type="DateTime" Precision="0" />
+    <Property Name="StatusId" Type="Int32" />
+    <Property Name="HourPerDay" Type="Int32" />
+    <Property Name="IsInShift" Type="Boolean" />
+    <Property Name="ShiftDetailId" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <NavigationProperty Name="ProjectDetail" Relationship="Self.FK_ResourceAllocation_ProjectDetail" FromRole="ResourceAllocation" ToRole="ProjectDetail" />
+    <NavigationProperty Name="ProjectRole" Relationship="Self.FK_ResourceAllocation_ProjectRole" FromRole="ResourceAllocation" ToRole="ProjectRole" />
+    <NavigationProperty Name="ResourceDetail" Relationship="Self.FK_ResourceAllocation_ResourceDetail" FromRole="ResourceAllocation" ToRole="ResourceDetail" />
+    <NavigationProperty Name="ShiftDetail" Relationship="Self.FK_ResourceAllocation_ShiftDetail" FromRole="ResourceAllocation" ToRole="ShiftDetail" />
+    <NavigationProperty Name="Status" Relationship="Self.FK_ResourceAllocation_Status" FromRole="ResourceAllocation" ToRole="Status" />
+  </EntityType>
+  <EntityType Name="ResourceDetail">
+    <Key>
+      <PropertyRef Name="ResourceDetailId" />
+    </Key>
+    <Property Name="ResourceDetailId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PSAId" Type="Int32" />
+    <Property Name="ResourceName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CGIDateOfJoin" Type="DateTime" Precision="0" />
+    <Property Name="CareerStartDate" Type="DateTime" Precision="0" />
+    <Property Name="LocationId" Type="Int32" />
+    <Property Name="SkillFamilyId" Type="Int32" />
+    <Property Name="CompentencyId" Type="Int32" />
+    <Property Name="SubcompetencyId" Type="Int32" />
+    <Property Name="StatusId" Type="Int32" />
+    <Property Name="ExtNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="DesignationId" Type="Int32" />
+    <NavigationProperty Name="Designation" Relationship="Self.FK_ResourceDetail_Designation" FromRole="ResourceDetail" ToRole="Designation" />
+    <NavigationProperty Name="Location" Relationship="Self.FK_ResourceDetail_Location" FromRole="ResourceDetail" ToRole="Location" />
+    <NavigationProperty Name="ResourceAllocations" Relationship="Self.FK_ResourceAllocation_ResourceDetail" FromRole="ResourceDetail" ToRole="ResourceAllocation" />
+    <NavigationProperty Name="Status" Relationship="Self.FK_ResourceDetail_Status" FromRole="ResourceDetail" ToRole="Status" />
+    <NavigationProperty Name="Subcompetency" Relationship="Self.FK_ResourceDetail_Subcompetency" FromRole="ResourceDetail" ToRole="Subcompetency" />
+    <NavigationProperty Name="VacationDetails" Relationship="Self.FK_VacationDetails_ResourceDetail" FromRole="ResourceDetail" ToRole="VacationDetails" />
+  </EntityType>
+  <EntityType Name="ShiftDetail">
+    <Key>
+      <PropertyRef Name="ShiftDetailId" />
+    </Key>
+    <Property Name="ShiftDetailId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ShiftDetail1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <NavigationProperty Name="ResourceAllocations" Relationship="Self.FK_ResourceAllocation_ShiftDetail" FromRole="ShiftDetail" ToRole="ResourceAllocation" />
+  </EntityType>
+  <EntityType Name="SkillFamily">
+    <Key>
+      <PropertyRef Name="SkillFamilyId" />
+    </Key>
+    <Property Name="SkillFamilyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SkillFamily1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <NavigationProperty Name="Competencies" Relationship="Self.FK_Competency_SkillFamily" FromRole="SkillFamily" ToRole="Competency" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="StatusId" />
+    </Key>
+    <Property Name="StatusId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Status1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <NavigationProperty Name="AccountDetails" Relationship="Self.FK_AccountDetail_Status" FromRole="Status" ToRole="AccountDetail" />
+    <NavigationProperty Name="ProjectDetails" Relationship="Self.FK_ProjectDetail_Status" FromRole="Status" ToRole="ProjectDetail" />
+    <NavigationProperty Name="ResourceAllocations" Relationship="Self.FK_ResourceAllocation_Status" FromRole="Status" ToRole="ResourceAllocation" />
+    <NavigationProperty Name="ResourceDetails" Relationship="Self.FK_ResourceDetail_Status" FromRole="Status" ToRole="ResourceDetail" />
+  </EntityType>
+  <EntityType Name="Subcompetency">
+    <Key>
+      <PropertyRef Name="SubcompetencyId" />
+    </Key>
+    <Property Name="SubcompetencyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompetencyId" Type="Int32" />
+    <Property Name="SubCompetency1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <NavigationProperty Name="Competency" Relationship="Self.FK_Subcompetency_Competency" FromRole="Subcompetency" ToRole="Competency" />
+    <NavigationProperty Name="ResourceDetails" Relationship="Self.FK_ResourceDetail_Subcompetency" FromRole="Subcompetency" ToRole="ResourceDetail" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="VacationDetail">
+    <Key>
+      <PropertyRef Name="VacationDetailId" />
+    </Key>
+    <Property Name="VacationDetailId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ResourceDetailId" Type="Int32" />
+    <Property Name="VacationDate" Type="DateTime" Precision="3" />
+    <Property Name="LeaveTypeId" Type="Int32" />
+    <Property Name="IsPlanned" Type="Boolean" />
+    <Property Name="IsBillable" Type="Boolean" />
+    <Property Name="IsApproved" Type="Boolean" />
+    <Property Name="Approvedby" Type="Int32" />
+    <Property Name="ApprovedOn" Type="DateTime" Precision="3" />
+    <Property Name="Reason" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <NavigationProperty Name="LeaveType" Relationship="Self.FK_VacationDetails_LeaveType" FromRole="VacationDetails" ToRole="LeaveType" />
+    <NavigationProperty Name="ResourceDetail" Relationship="Self.FK_VacationDetails_ResourceDetail" FromRole="VacationDetails" ToRole="ResourceDetail" />
+  </EntityType>
+  <EntityType Name="Vertical">
+    <Key>
+      <PropertyRef Name="VerticalId" />
+    </Key>
+    <Property Name="VerticalId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VerticalName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="VerticalHead" Type="Int32" />
+    <Property Name="StatusId" Type="Int32" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <NavigationProperty Name="AccountDetails" Relationship="Self.FK_AccountDetail_Verticals" FromRole="Verticals" ToRole="AccountDetail" />
+  </EntityType>
+  <Association Name="FK_AccountDetail_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="0..1" />
+    <End Role="AccountDetail" Type="Self.AccountDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="StatusId" />
+      </Principal>
+      <Dependent Role="AccountDetail">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AccountDetail_Verticals">
+    <End Role="Verticals" Type="Self.Vertical" Multiplicity="0..1" />
+    <End Role="AccountDetail" Type="Self.AccountDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Verticals">
+        <PropertyRef Name="VerticalId" />
+      </Principal>
+      <Dependent Role="AccountDetail">
+        <PropertyRef Name="VerticalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectDetail_AccountDetail">
+    <End Role="AccountDetail" Type="Self.AccountDetail" Multiplicity="0..1" />
+    <End Role="ProjectDetail" Type="Self.ProjectDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccountDetail">
+        <PropertyRef Name="AccountDetailId" />
+      </Principal>
+      <Dependent Role="ProjectDetail">
+        <PropertyRef Name="AccountDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Competency_SkillFamily">
+    <End Role="SkillFamily" Type="Self.SkillFamily" Multiplicity="0..1" />
+    <End Role="Competency" Type="Self.Competency" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SkillFamily">
+        <PropertyRef Name="SkillFamilyId" />
+      </Principal>
+      <Dependent Role="Competency">
+        <PropertyRef Name="SkillFamilyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subcompetency_Competency">
+    <End Role="Competency" Type="Self.Competency" Multiplicity="0..1" />
+    <End Role="Subcompetency" Type="Self.Subcompetency" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Competency">
+        <PropertyRef Name="CompetencyId" />
+      </Principal>
+      <Dependent Role="Subcompetency">
+        <PropertyRef Name="CompetencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResourceDetail_Designation">
+    <End Role="Designation" Type="Self.Designation" Multiplicity="0..1" />
+    <End Role="ResourceDetail" Type="Self.ResourceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Designation">
+        <PropertyRef Name="DesignationId" />
+      </Principal>
+      <Dependent Role="ResourceDetail">
+        <PropertyRef Name="DesignationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VacationDetails_LeaveType">
+    <End Role="LeaveType" Type="Self.LeaveType" Multiplicity="0..1" />
+    <End Role="VacationDetails" Type="Self.VacationDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LeaveType">
+        <PropertyRef Name="LeaveTypeId" />
+      </Principal>
+      <Dependent Role="VacationDetails">
+        <PropertyRef Name="LeaveTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResourceDetail_Location">
+    <End Role="Location" Type="Self.Location" Multiplicity="0..1" />
+    <End Role="ResourceDetail" Type="Self.ResourceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="LocationId" />
+      </Principal>
+      <Dependent Role="ResourceDetail">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectDetail_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="0..1" />
+    <End Role="ProjectDetail" Type="Self.ProjectDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="StatusId" />
+      </Principal>
+      <Dependent Role="ProjectDetail">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResourceAllocation_ProjectDetail">
+    <End Role="ProjectDetail" Type="Self.ProjectDetail" Multiplicity="0..1" />
+    <End Role="ResourceAllocation" Type="Self.ResourceAllocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectDetail">
+        <PropertyRef Name="ProjectDetailId" />
+      </Principal>
+      <Dependent Role="ResourceAllocation">
+        <PropertyRef Name="ProjectDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResourceAllocation_ProjectRole">
+    <End Role="ProjectRole" Type="Self.ProjectRole" Multiplicity="0..1" />
+    <End Role="ResourceAllocation" Type="Self.ResourceAllocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectRole">
+        <PropertyRef Name="ProjectRoleId" />
+      </Principal>
+      <Dependent Role="ResourceAllocation">
+        <PropertyRef Name="ProjectRoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResourceAllocation_ResourceDetail">
+    <End Role="ResourceDetail" Type="Self.ResourceDetail" Multiplicity="0..1" />
+    <End Role="ResourceAllocation" Type="Self.ResourceAllocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ResourceDetail">
+        <PropertyRef Name="ResourceDetailId" />
+      </Principal>
+      <Dependent Role="ResourceAllocation">
+        <PropertyRef Name="ResourceDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResourceAllocation_ShiftDetail">
+    <End Role="ShiftDetail" Type="Self.ShiftDetail" Multiplicity="0..1" />
+    <End Role="ResourceAllocation" Type="Self.ResourceAllocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShiftDetail">
+        <PropertyRef Name="ShiftDetailId" />
+      </Principal>
+      <Dependent Role="ResourceAllocation">
+        <PropertyRef Name="ShiftDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResourceAllocation_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="0..1" />
+    <End Role="ResourceAllocation" Type="Self.ResourceAllocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="StatusId" />
+      </Principal>
+      <Dependent Role="ResourceAllocation">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResourceDetail_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="0..1" />
+    <End Role="ResourceDetail" Type="Self.ResourceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="StatusId" />
+      </Principal>
+      <Dependent Role="ResourceDetail">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResourceDetail_Subcompetency">
+    <End Role="Subcompetency" Type="Self.Subcompetency" Multiplicity="0..1" />
+    <End Role="ResourceDetail" Type="Self.ResourceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subcompetency">
+        <PropertyRef Name="SubcompetencyId" />
+      </Principal>
+      <Dependent Role="ResourceDetail">
+        <PropertyRef Name="SubcompetencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VacationDetails_ResourceDetail">
+    <End Role="ResourceDetail" Type="Self.ResourceDetail" Multiplicity="0..1" />
+    <End Role="VacationDetails" Type="Self.VacationDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ResourceDetail">
+        <PropertyRef Name="ResourceDetailId" />
+      </Principal>
+      <Dependent Role="VacationDetails">
+        <PropertyRef Name="ResourceDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EMSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AccountDetails" EntityType="Self.AccountDetail" />
+    <EntitySet Name="Competencies" EntityType="Self.Competency" />
+    <EntitySet Name="Designations" EntityType="Self.Designation" />
+    <EntitySet Name="LeaveTypes" EntityType="Self.LeaveType" />
+    <EntitySet Name="Locations" EntityType="Self.Location" />
+    <EntitySet Name="ProjectDetails" EntityType="Self.ProjectDetail" />
+    <EntitySet Name="ProjectRoles" EntityType="Self.ProjectRole" />
+    <EntitySet Name="ResourceAllocations" EntityType="Self.ResourceAllocation" />
+    <EntitySet Name="ResourceDetails" EntityType="Self.ResourceDetail" />
+    <EntitySet Name="ShiftDetails" EntityType="Self.ShiftDetail" />
+    <EntitySet Name="SkillFamilies" EntityType="Self.SkillFamily" />
+    <EntitySet Name="Status" EntityType="Self.Status" />
+    <EntitySet Name="Subcompetencies" EntityType="Self.Subcompetency" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="VacationDetails" EntityType="Self.VacationDetail" />
+    <EntitySet Name="Verticals" EntityType="Self.Vertical" />
+    <AssociationSet Name="FK_AccountDetail_Status" Association="Self.FK_AccountDetail_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="AccountDetail" EntitySet="AccountDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AccountDetail_Verticals" Association="Self.FK_AccountDetail_Verticals">
+      <End Role="Verticals" EntitySet="Verticals" />
+      <End Role="AccountDetail" EntitySet="AccountDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectDetail_AccountDetail" Association="Self.FK_ProjectDetail_AccountDetail">
+      <End Role="AccountDetail" EntitySet="AccountDetails" />
+      <End Role="ProjectDetail" EntitySet="ProjectDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Competency_SkillFamily" Association="Self.FK_Competency_SkillFamily">
+      <End Role="SkillFamily" EntitySet="SkillFamilies" />
+      <End Role="Competency" EntitySet="Competencies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subcompetency_Competency" Association="Self.FK_Subcompetency_Competency">
+      <End Role="Competency" EntitySet="Competencies" />
+      <End Role="Subcompetency" EntitySet="Subcompetencies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResourceDetail_Designation" Association="Self.FK_ResourceDetail_Designation">
+      <End Role="Designation" EntitySet="Designations" />
+      <End Role="ResourceDetail" EntitySet="ResourceDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VacationDetails_LeaveType" Association="Self.FK_VacationDetails_LeaveType">
+      <End Role="LeaveType" EntitySet="LeaveTypes" />
+      <End Role="VacationDetails" EntitySet="VacationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResourceDetail_Location" Association="Self.FK_ResourceDetail_Location">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="ResourceDetail" EntitySet="ResourceDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectDetail_Status" Association="Self.FK_ProjectDetail_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="ProjectDetail" EntitySet="ProjectDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResourceAllocation_ProjectDetail" Association="Self.FK_ResourceAllocation_ProjectDetail">
+      <End Role="ProjectDetail" EntitySet="ProjectDetails" />
+      <End Role="ResourceAllocation" EntitySet="ResourceAllocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResourceAllocation_ProjectRole" Association="Self.FK_ResourceAllocation_ProjectRole">
+      <End Role="ProjectRole" EntitySet="ProjectRoles" />
+      <End Role="ResourceAllocation" EntitySet="ResourceAllocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResourceAllocation_ResourceDetail" Association="Self.FK_ResourceAllocation_ResourceDetail">
+      <End Role="ResourceDetail" EntitySet="ResourceDetails" />
+      <End Role="ResourceAllocation" EntitySet="ResourceAllocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResourceAllocation_ShiftDetail" Association="Self.FK_ResourceAllocation_ShiftDetail">
+      <End Role="ShiftDetail" EntitySet="ShiftDetails" />
+      <End Role="ResourceAllocation" EntitySet="ResourceAllocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResourceAllocation_Status" Association="Self.FK_ResourceAllocation_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="ResourceAllocation" EntitySet="ResourceAllocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResourceDetail_Status" Association="Self.FK_ResourceDetail_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="ResourceDetail" EntitySet="ResourceDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResourceDetail_Subcompetency" Association="Self.FK_ResourceDetail_Subcompetency">
+      <End Role="Subcompetency" EntitySet="Subcompetencies" />
+      <End Role="ResourceDetail" EntitySet="ResourceDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VacationDetails_ResourceDetail" Association="Self.FK_VacationDetails_ResourceDetail">
+      <End Role="ResourceDetail" EntitySet="ResourceDetails" />
+      <End Role="VacationDetails" EntitySet="VacationDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

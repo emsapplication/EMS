@@ -7,15 +7,24 @@ import { NgbRatingModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { routing } from './supplementry.routing';
 
+import { Supplementry } from './supplementry.component';
+import { Location } from './components/location';
 
-import { SupplementryComponent } from './supplementry.component';
+import { AddLocation } from './components/location/components/addLocation/addLocation.component';
+import {AgGridModule} from "ag-grid-angular/main";
 
-import { CheckboxInputs } from './Components/location/components/checkboxInputs';
+//import { StandardInputs } from './components/location/components/standardInputs';
+//import { ValidationInputs } from './components/location/components/validationInputs';
+//import { GroupInputs } from './components/location/components/groupInputs';
+//import { CheckboxInputs } from './components/location/components/checkboxInputs';
+//import { Rating } from './components/location/components/ratinginputs';
+//import { SelectInputs } from './components/location/components/selectInputs';
 
-import { SelectInputs } from './Components/location/components/selectInputs';
-
-import { StandardInputs } from './Components/location/components/standardInputs';
-
+//import { InlineForm } from './components/layouts/components/inlineForm';
+//import { BlockForm } from './components/layouts/components/blockForm';
+//import { HorizontalForm } from './components/layouts/components/horizontalForm';
+//import { BasicForm } from './components/layouts/components/basicForm';
+//import { WithoutLabelsForm } from './components/layouts/components/withoutLabelsForm';
 
 @NgModule({
   imports: [
@@ -24,18 +33,19 @@ import { StandardInputs } from './Components/location/components/standardInputs'
     AppTranslationModule,
     NgaModule,
     NgbRatingModule,
-    routing
+    routing,
+AgGridModule.withComponents([])
   ],
   declarations: [
-    //Layouts,
-    //Inputs,
-    SupplementryComponent,
-    StandardInputs,
+    Location,
+    Supplementry,
+    AddLocation
+    //StandardInputs,
     //ValidationInputs,
-   // GroupInputs,
-    CheckboxInputs,
+    //GroupInputs,
+    //CheckboxInputs,
     //Rating,
-    SelectInputs,
+    //SelectInputs,
     //InlineForm,
     //BlockForm,
     //HorizontalForm,
@@ -45,3 +55,4 @@ import { StandardInputs } from './Components/location/components/standardInputs'
 })
 export class SupplementryModule {
 }
+

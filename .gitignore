@@ -4,3 +4,5 @@
 
 /EMS/dist
 /EMS/dist
+/EMS/node_modules/ag-grid/dist
+/EMS.DataAccessLayer/bin/Debug

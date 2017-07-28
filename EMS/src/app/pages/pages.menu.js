@@ -67,7 +67,7 @@ exports.PAGES_MENU = [
                 },
             },
             {
-                path: 'ui',
+                path: 'supplementary.location',
                 data: {
                     menu: {
                         title: 'general.menu.supplementary',
@@ -79,7 +79,7 @@ exports.PAGES_MENU = [
                 },
                 children: [
                     {
-                        path: 'typography',
+                        path: 'supplementary.location',
                         data: {
                             menu: {
                                 subicon: 'fa fa-arrow-circle-o-right',

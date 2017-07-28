@@ -25,7 +25,7 @@ export const routes: Routes = [
       { path: 'editors', loadChildren: './editors/editors.module#EditorsModule' },
       { path: 'components', loadChildren: './components/components.module#ComponentsModule' },
       { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
-      { path: 'supplementary', loadChildren: './supplementry/supplementry.module#SupplementryModule'},
+      { path: 'supplementry', loadChildren: './supplementry/supplementry.module#SupplementryModule'},
       { path: 'forms', loadChildren: './forms/forms.module#FormsModule' },
       { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },
       { path: 'maps', loadChildren: './maps/maps.module#MapsModule' }

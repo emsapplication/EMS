@@ -1,20 +1,22 @@
 ﻿import { Routes, RouterModule }  from '@angular/router';
 
-import { SupplementryComponent } from './supplementry.component';
-import { ModuleWithProviders } from '@angular/core';
-//import { Inputs } from './components/inputs/inputs.component';
+import { Supplementry } from './supplementry.component';
+import { Location } from './components/location/location.component';
 //import { Layouts } from './components/layouts/layouts.component';
+
+import { AddLocation } from './components/location/components/addLocation/addLocation.component';
 
 // noinspection TypeScriptValidateTypes
 const routes: Routes = [
   {
-    path: 'supplementary',
-    component: SupplementryComponent,
-    //children: [
-    //  { path: 'inputs', component: Inputs },
-    //  { path: 'layouts', component: Layouts }
-    //]
+    path: '',
+    component: Supplementry,
+    children: [
+      { path: 'locationDetails', component: Location },
+      { path: 'addLocation', component: AddLocation }
+    ]
   }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forChild(routes);
+export const routing = RouterModule.forChild(routes);
+

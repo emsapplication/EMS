@@ -18,7 +18,7 @@ var SupplementryComponent = (function () {
 SupplementryComponent = __decorate([
     core_1.Component({
         selector: 'supplementry',
-        template: "<router-outlet></router-outlet>"
+        template: '<h3>Location Details</h3>',
     }),
     __metadata("design:paramtypes", [])
 ], SupplementryComponent);
