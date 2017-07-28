@@ -112,10 +112,30 @@
     <Compile Include="DataEntityModel\Vertical.cs">
       <DependentUpon>EMSTransaction.tt</DependentUpon>
     </Compile>
+    <Compile Include="Operations\CompetencyDA.cs" />
+    <Compile Include="Operations\DesignationDA.cs" />
+    <Compile Include="Operations\LeaveTypeDA.cs" />
+    <Compile Include="Operations\ProjectRoleDA.cs" />
+    <Compile Include="Operations\ResourceDetailDA.cs" />
+    <Compile Include="Operations\ShiftDetailDA.cs" />
+    <Compile Include="Operations\SkillFamilyDA.cs" />
+    <Compile Include="Operations\StatusDA.cs" />
+    <Compile Include="Operations\SubcompetencyDA.cs" />
+    <Compile Include="Operations\VacationDetailsDA.cs" />
+    <Compile Include="Operations\VerticalsDA.cs" />
     <Compile Include="Operations\LocationDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceContract\ICompetencyDA.cs" />
     <Compile Include="ServiceContract\IDesignationDA.cs" />
     <Compile Include="ServiceContract\ILeaveTypeDA.cs" />
+    <Compile Include="ServiceContract\IProjectRoleDA.cs" />
+    <Compile Include="ServiceContract\IResourceDetailDA.cs" />
+    <Compile Include="ServiceContract\IShiftDetailDA.cs" />
+    <Compile Include="ServiceContract\ISkillFamilyDA.cs" />
+    <Compile Include="ServiceContract\IStatusDA.cs" />
+    <Compile Include="ServiceContract\ISubcompetencyDA.cs" />
+    <Compile Include="ServiceContract\IVacationDetailsDA.cs" />
+    <Compile Include="ServiceContract\IVerticalsDA.cs" />
     <Compile Include="ServiceContract\ILocationsDA.cs" />
   </ItemGroup>
   <ItemGroup>
