@@ -1,4 +1,4 @@
-import {Component, Input, Output, EventEmitter} from '@angular/core';
+﻿import {Component, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'ba-menu-item',
@@ -12,6 +12,11 @@ export class BaMenuItem {
 
   @Output() itemHover = new EventEmitter<any>();
   @Output() toggleSubMenu = new EventEmitter<any>();
+
+  
+public selectedMenu(leftmenuitem)
+{
+}
 
   public onHoverItem($event):void {
     this.itemHover.emit($event);

@@ -73,6 +73,7 @@
         path: 'supplementry',
         data: {
           menu: {
+            id: "supplementry",
             title: 'general.menu.supplementary',
             icon: 'fa fa-edit',
             selected: false,
@@ -85,7 +86,8 @@
             path: 'locationDetails',
             data: {
               menu: {
-                 subicon: 'fa fa-arrow-circle-o-right',
+                id: "supplementrylocation",
+                subicon: 'fa fa-arrow-circle-o-right',
                 title: 'general.menu.s_location',
               },
             },

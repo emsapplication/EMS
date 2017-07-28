@@ -4,6 +4,7 @@ import { FormsModule as AngularFormsModule } from '@angular/forms';
 import { AppTranslationModule } from '../../app.translation.module';
 import { NgaModule } from '../../theme/nga.module';
 import { NgbRatingModule } from '@ng-bootstrap/ng-bootstrap';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 import { routing } from './supplementry.routing';
 
@@ -12,6 +13,9 @@ import { Location } from './components/location';
 
 import { AddLocation } from './components/location/components/addLocation/addLocation.component';
 import {AgGridModule} from "ag-grid-angular/main";
+
+import { SmartTables } from '../../pages/tables/components/smartTables/smartTables.component';
+import { SmartTablesService } from '../../pages/tables/components/smartTables/smartTables.service';
 
 //import { StandardInputs } from './components/location/components/standardInputs';
 //import { ValidationInputs } from './components/location/components/validationInputs';
@@ -34,12 +38,14 @@ import {AgGridModule} from "ag-grid-angular/main";
     NgaModule,
     NgbRatingModule,
     routing,
+Ng2SmartTableModule,
 AgGridModule.withComponents([])
   ],
   declarations: [
     Location,
     Supplementry,
-    AddLocation
+    AddLocation,
+SmartTables
     //StandardInputs,
     //ValidationInputs,
     //GroupInputs,
@@ -51,6 +57,9 @@ AgGridModule.withComponents([])
     //HorizontalForm,
     //BasicForm,
     //WithoutLabelsForm
+  ],
+ providers: [
+    SmartTablesService
   ]
 })
 export class SupplementryModule {
