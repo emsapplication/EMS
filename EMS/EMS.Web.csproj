@@ -53,11 +53,17 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
@@ -383,6 +389,7 @@
     <Content Include="src\assets\img\app\feed\new-york-location.png" />
     <Content Include="src\assets\img\app\feed\vader-and-me-preview.png" />
     <Content Include="src\assets\img\app\my-app-logo.png" />
+    <Content Include="src\assets\img\app\profile\Alexander.png" />
     <Content Include="src\assets\img\app\profile\CGIlogo.jpg" />
     <Content Include="src\assets\img\app\profile\CGIlogo.png" />
     <Content Include="src\assets\img\app\profile\Nasta.png" />
@@ -614,6 +621,7 @@
     <TypeScriptCompile Include="src\app\app.routing.ts" />
     <TypeScriptCompile Include="src\app\app.service.ts" />
     <TypeScriptCompile Include="src\app\app.translation.module.ts" />
+    <TypeScriptCompile Include="src\app\common\EMSApi.ts" />
     <TypeScriptCompile Include="src\app\global.state.ts" />
     <TypeScriptCompile Include="src\app\pages\accountdetail\accountdetails.component.ts" />
     <TypeScriptCompile Include="src\app\pages\accountdetail\accountdetails.module.ts" />

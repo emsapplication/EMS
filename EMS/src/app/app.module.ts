@@ -1,4 +1,4 @@
-import { NgModule, ApplicationRef } from '@angular/core';
+﻿import { NgModule, ApplicationRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -13,6 +13,7 @@ import { routing } from './app.routing';
 // App is our top level component
 import { App } from './app.component';
 import { AppState, InternalStateType } from './app.service';
+import { EMSApi } from './common/EMSApi';
 import { GlobalState } from './global.state';
 import { NgaModule } from './theme/nga.module';
 import { PagesModule } from './pages/pages.module';
@@ -21,7 +22,8 @@ import { PagesModule } from './pages/pages.module';
 // Application wide providers
 const APP_PROVIDERS = [
   AppState,
-  GlobalState
+    GlobalState,
+    EMSApi
 ];
 
 export type StoreType = {

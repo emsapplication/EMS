@@ -6,3 +6,5 @@
 /EMS/dist
 /EMS/node_modules/ag-grid/dist
 /EMS.DataAccessLayer/bin/Debug
+/EMS.ApiService/bin
+/EMS/bin

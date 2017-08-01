@@ -13,7 +13,7 @@ const routes: Routes = [
     component: Supplementry,
     children: [
       { path: 'locationDetails', component: Location },
-      { path: 'addLocation', component: AddLocation }
+      { path: 'location', component: AddLocation }
     ]
   }
 ];

@@ -5,3 +5,8 @@ D:\EMS\Application\EMS\EMS.DataAccessLayer\bin\Debug\EMS.BusinessObjects.pdb
 D:\EMS\Application\EMS\EMS.DataAccessLayer\obj\Debug\EMS.DataAccessLayer.csprojResolveAssemblyReference.cache
 D:\EMS\Application\EMS\EMS.DataAccessLayer\obj\Debug\EMS.DataAccessLayer.dll
 D:\EMS\Application\EMS\EMS.DataAccessLayer\obj\Debug\EMS.DataAccessLayer.pdb
+D:\EMS\Application\EMS\EMS.DataAccessLayer\bin\Debug\EMS.DataAccessLayer.dll.config
+D:\EMS\Application\EMS\EMS.DataAccessLayer\bin\Debug\EntityFramework.dll
+D:\EMS\Application\EMS\EMS.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\EMS\Application\EMS\EMS.DataAccessLayer\bin\Debug\EntityFramework.xml
+D:\EMS\Application\EMS\EMS.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
