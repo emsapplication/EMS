@@ -22,13 +22,15 @@ var app_routing_1 = require("./app.routing");
 // App is our top level component
 var app_component_1 = require("./app.component");
 var app_service_1 = require("./app.service");
+var EMSApi_1 = require("./common/EMSApi");
 var global_state_1 = require("./global.state");
 var nga_module_1 = require("./theme/nga.module");
 var pages_module_1 = require("./pages/pages.module");
 // Application wide providers
 var APP_PROVIDERS = [
     app_service_1.AppState,
-    global_state_1.GlobalState
+    global_state_1.GlobalState,
+    EMSApi_1.EMSApi
 ];
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process

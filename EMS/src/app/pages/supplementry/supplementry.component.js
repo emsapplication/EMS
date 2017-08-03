@@ -10,17 +10,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var SupplementryComponent = (function () {
-    function SupplementryComponent() {
+var Supplementry = (function () {
+    function Supplementry() {
     }
-    return SupplementryComponent;
+    return Supplementry;
 }());
-SupplementryComponent = __decorate([
+Supplementry = __decorate([
     core_1.Component({
         selector: 'supplementry',
-        template: '<h3>Location Details</h3>',
+        template: "<router-outlet></router-outlet>"
     }),
     __metadata("design:paramtypes", [])
-], SupplementryComponent);
-exports.SupplementryComponent = SupplementryComponent;
+], Supplementry);
+exports.Supplementry = Supplementry;
 //# sourceMappingURL=supplementry.component.js.map

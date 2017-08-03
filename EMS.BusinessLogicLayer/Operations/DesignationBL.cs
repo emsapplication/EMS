@@ -1,40 +1,44 @@
-﻿using EMS.DataAccessLayer.ServiceContract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EMS.BusinessLogicLayer.ServiceContract;
 using EMS.BusinessObjects;
-using EMSEntity = EMS.DataAccessLayer.DataEntityModel;
-using EMS.BusinessLogicLayer.ServiceContract;
+using EMS.DataAccessLayer.Operations;
+using EMS.DataAccessLayer.ServiceContract;
+using System.Collections.Generic;
 
 namespace EMS.BusinessLogicLayer.Operations
 {
     public class DesignationBL : IDesignationBL
     {
-        public int AddDesignation(DesignationBO obj)
+
+        IDesignationDA oDesignation;
+        public DesignationBL()
         {
-            throw new NotImplementedException();
+            oDesignation = new DesignationDA();
         }
 
-        public int DeleteDesignation(int leaveTypeid)
+        public int AddDesignation(DesignationBO obj)
         {
-            throw new NotImplementedException();
+            return oDesignation.AddDesignation(obj);
+        }
+
+        public int DeleteDesignation(int id)
+        {
+            return oDesignation.DeleteDesignation(id);
         }
 
         public List<DesignationBO> GetAllDesignation()
         {
-            throw new NotImplementedException();
+            return oDesignation.GetAllDesignation();
         }
 
-        public DesignationBO GetDesignationById(int leaveTypeid)
+        public DesignationBO GetDesignationById(int Id)
         {
-            throw new NotImplementedException();
+            return oDesignation.GetDesignationById(Id);
         }
 
         public int UpdateDesignation(DesignationBO obj)
         {
-            throw new NotImplementedException();
+            return oDesignation.UpdateDesignation(obj);
+
         }
     }
 }

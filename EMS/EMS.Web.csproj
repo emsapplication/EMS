@@ -622,6 +622,7 @@
     <TypeScriptCompile Include="src\app\app.service.ts" />
     <TypeScriptCompile Include="src\app\app.translation.module.ts" />
     <TypeScriptCompile Include="src\app\common\EMSApi.ts" />
+    <TypeScriptCompile Include="src\app\common\types\location.ts" />
     <TypeScriptCompile Include="src\app\global.state.ts" />
     <TypeScriptCompile Include="src\app\pages\accountdetail\accountdetails.component.ts" />
     <TypeScriptCompile Include="src\app\pages\accountdetail\accountdetails.module.ts" />

@@ -15,5 +15,9 @@ namespace EMS.DataAccessLayer.ServiceContract
         List<ResourceDetailBO> GetAllResourceDetail();
 
         ResourceDetailBO GetResourceDetailById(int id);
+
+        int ImportResourceDetail(ResourceDetailBO obj);
+
+        List<ResourceDetailBO> SearchResourceDetail(ResourceDetailBO obj);
     }
 }

@@ -5,7 +5,7 @@
 
         public int SubcompetencyId { get; set; }
 
-        public int CompetencyId { get; set; }
+        public int? CompetencyId { get; set; }
 
         public string SubCompetency { get; set; }
 

@@ -33,9 +33,15 @@ export class AppState {
     return this._state[prop] = value;
   }
 
+  remove(prop: string) {
+      // internally remove state
+      return this._state[prop] = null;
+  }
+
 
   private _clone(object: InternalStateType) {
     // simple object clone
     return JSON.parse(JSON.stringify(object));
+      //return null;
   }
 }

@@ -37,6 +37,13 @@ export class EMSApi {
                 .catch(this.handleError);
         }
 
+        getServiceWithId(url: string, param: any): Observable<any> {
+            return this.http
+                .get(url + "/" + param, this.options)
+                .map(this.extractData)
+                .catch(this.handleError);
+        }
+
     //    getServiceWithDynamicQueryTerm(url: string, key: string, val: string): Observable < any > {
     //        return this.http
     //            .get(url + "/?" + key + "=" + val, this.options)
@@ -136,6 +143,3 @@ export class EMSApi {
         return Observable.throw(errMsg);
     }
 }
-
-
-

@@ -1,6 +1,6 @@
 ﻿namespace EMS.BusinessObjects
 {
-  public class StatusBO
+  public class StatusBO : BaseBO
     {
         public int StatusId { get; set; }
 

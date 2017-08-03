@@ -67,9 +67,10 @@ exports.PAGES_MENU = [
                 },
             },
             {
-                path: 'supplementary.location',
+                path: 'supplementry',
                 data: {
                     menu: {
+                        id: "supplementry",
                         title: 'general.menu.supplementary',
                         icon: 'fa fa-edit',
                         selected: false,
@@ -79,9 +80,10 @@ exports.PAGES_MENU = [
                 },
                 children: [
                     {
-                        path: 'supplementary.location',
+                        path: 'locationDetails',
                         data: {
                             menu: {
+                                id: "supplementrylocation",
                                 subicon: 'fa fa-arrow-circle-o-right',
                                 title: 'general.menu.s_location',
                             },

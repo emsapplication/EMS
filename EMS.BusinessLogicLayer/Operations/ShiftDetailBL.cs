@@ -1,40 +1,46 @@
-﻿using EMS.DataAccessLayer.ServiceContract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EMS.BusinessLogicLayer.ServiceContract;
 using EMS.BusinessObjects;
-using EMSEntity = EMS.DataAccessLayer.DataEntityModel;
-using EMS.BusinessLogicLayer.ServiceContract;
+using EMS.DataAccessLayer.Operations;
+using EMS.DataAccessLayer.ServiceContract;
+using System.Collections.Generic;
 
 namespace EMS.BusinessLogicLayer.Operations
 {
     public class ShiftDetailBL : IShiftDetailBL
     {
+
+        IShiftDetailDA oShiftDetail;
+        public ShiftDetailBL()
+        {
+            oShiftDetail = new ShiftDetailDA();
+        }
+
         public int AddShiftDetail(ShiftDetailBO obj)
         {
-            throw new NotImplementedException();
+            return oShiftDetail.AddShiftDetail(obj);
         }
 
         public int DeleteShiftDetail(int id)
         {
-            throw new NotImplementedException();
+            return oShiftDetail.DeleteShiftDetail(id);
         }
 
         public List<ShiftDetailBO> GetAllShiftDetail()
         {
-            throw new NotImplementedException();
+            return oShiftDetail.GetAllShiftDetail();
+
         }
 
         public ShiftDetailBO GetShiftDetailById(int id)
         {
-            throw new NotImplementedException();
+            return oShiftDetail.GetShiftDetailById(id);
+
         }
 
         public int UpdatShiftDetail(ShiftDetailBO obj)
         {
-            throw new NotImplementedException();
+            return oShiftDetail.UpdatShiftDetail(obj);
+
         }
     }
 }

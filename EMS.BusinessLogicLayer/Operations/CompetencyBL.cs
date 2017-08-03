@@ -1,13 +1,8 @@
-﻿using EMS.DataAccessLayer.ServiceContract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EMS.BusinessLogicLayer.ServiceContract;
 using EMS.BusinessObjects;
-using EMSEntity = EMS.DataAccessLayer.DataEntityModel;
-using EMS.BusinessLogicLayer.ServiceContract;
 using EMS.DataAccessLayer.Operations;
+using EMS.DataAccessLayer.ServiceContract;
+using System.Collections.Generic;
 
 namespace EMS.BusinessLogicLayer.Operations
 {
@@ -20,29 +15,30 @@ namespace EMS.BusinessLogicLayer.Operations
             oCompetency = new CompetencyDA();
         }
 
+
         public int AddCompetency(CompetencyBO obj)
         {
-            throw new NotImplementedException();
+            return oCompetency.AddCompetency(obj);
         }
 
         public int DeleteCompetency(int id)
         {
-            throw new NotImplementedException();
+            return oCompetency.DeleteCompetency(id);
         }
 
         public List<CompetencyBO> GetAllCompetency()
         {
-            throw new NotImplementedException();
+            return oCompetency.GetAllCompetency();
         }
 
         public CompetencyBO GetCompetencyById(int id)
         {
-            throw new NotImplementedException();
+            return oCompetency.GetCompetencyById(id);
         }
 
         public int UpdateCompetency(CompetencyBO obj)
         {
-            throw new NotImplementedException();
+            return oCompetency.UpdateCompetency(obj);
         }
     }
 }

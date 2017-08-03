@@ -1,40 +1,44 @@
-﻿using EMS.DataAccessLayer.ServiceContract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EMS.BusinessLogicLayer.ServiceContract;
 using EMS.BusinessObjects;
-using EMSEntity = EMS.DataAccessLayer.DataEntityModel;
-using EMS.BusinessLogicLayer.ServiceContract;
+using EMS.DataAccessLayer.Operations;
+using EMS.DataAccessLayer.ServiceContract;
+using System.Collections.Generic;
 
 namespace EMS.BusinessLogicLayer.Operations
 {
     public class VacationDetailsBL : IVacationDetailsBL
     {
+
+        IVacationDetailsDA oVacationDetails;
+        public VacationDetailsBL()
+        {
+            oVacationDetails = new VacationDetailsDA();
+        }
+
         public int AddVacationDetails(VacationDetailsBO obj)
         {
-            throw new NotImplementedException();
+            return oVacationDetails.AddVacationDetails(obj);
         }
 
         public int DeleteVacationDetails(int id)
         {
-            throw new NotImplementedException();
+            return oVacationDetails.DeleteVacationDetails(id);
         }
 
         public List<VacationDetailsBO> GetAllVacationDetails()
         {
-            throw new NotImplementedException();
+            return oVacationDetails.GetAllVacationDetails();
         }
 
         public VacationDetailsBO GetVacationDetailsById(int id)
         {
-            throw new NotImplementedException();
+            return oVacationDetails.GetVacationDetailsById(id);
+
         }
 
         public int UpdateVacationDetails(VacationDetailsBO obj)
         {
-            throw new NotImplementedException();
+            return oVacationDetails.UpdateVacationDetails(obj);
         }
     }
 }

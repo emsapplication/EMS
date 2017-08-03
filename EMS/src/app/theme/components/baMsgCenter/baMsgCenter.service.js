@@ -16,7 +16,7 @@ var BaMsgCenterService = (function () {
                 time: '1 min ago'
             },
             {
-                name: 'Kostya',
+                name: 'Alexander',
                 text: 'Kostya changed his contact information.',
                 time: '2 hrs ago'
             },
@@ -26,7 +26,7 @@ var BaMsgCenterService = (function () {
                 time: '5 hrs ago'
             },
             {
-                name: 'Andrey',
+                name: 'Alexander',
                 text: 'Andrey replied to your comment.',
                 time: '1 day ago'
             },
@@ -41,14 +41,14 @@ var BaMsgCenterService = (function () {
                 time: '3 days ago'
             },
             {
-                name: 'Kostya',
+                name: 'Alexander',
                 text: 'Kostya invited you to join the event.',
                 time: '1 week ago'
             }
         ];
         this._messages = [
             {
-                name: 'Nasta',
+                name: 'Alexander',
                 text: 'After you get up and running, you can place Font Awesome icons just about...',
                 time: '1 min ago'
             },
@@ -58,22 +58,22 @@ var BaMsgCenterService = (function () {
                 time: '2 hrs ago'
             },
             {
-                name: 'Kostya',
+                name: 'Alexander',
                 text: 'Want to request new icons? Here\'s how. Need vectors or want to use on the...',
                 time: '10 hrs ago'
             },
             {
-                name: 'Andrey',
+                name: 'Alexander',
                 text: 'Explore your passions and discover new ones by getting involved. Stretch your...',
                 time: '1 day ago'
             },
             {
-                name: 'Nasta',
+                name: 'Alexander',
                 text: 'Get to know who we are - from the inside out. From our history and culture, to the...',
                 time: '1 day ago'
             },
             {
-                name: 'Kostya',
+                name: 'Alexander',
                 text: 'Need some support to reach your goals? Apply for scholarships across a variety of...',
                 time: '2 days ago'
             },

@@ -7,3 +7,6 @@ D:\EMS\Application\EMS\EMS.BusinessLogicLayer\bin\Debug\EMS.DataAccessLayer.pdb
 D:\EMS\Application\EMS\EMS.BusinessLogicLayer\obj\Debug\EMS.BusinessLogicLayer.csprojResolveAssemblyReference.cache
 D:\EMS\Application\EMS\EMS.BusinessLogicLayer\obj\Debug\EMS.BusinessLogicLayer.dll
 D:\EMS\Application\EMS\EMS.BusinessLogicLayer\obj\Debug\EMS.BusinessLogicLayer.pdb
+D:\EMS\Application\EMS\EMS.BusinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\EMS\Application\EMS\EMS.BusinessLogicLayer\bin\Debug\EMS.DataAccessLayer.dll.config
+D:\EMS\Application\EMS\EMS.BusinessLogicLayer\bin\Debug\EntityFramework.xml

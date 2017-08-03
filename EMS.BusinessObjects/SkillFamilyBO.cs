@@ -1,6 +1,6 @@
 ﻿namespace EMS.BusinessObjects
 {
-    public class SkillFamilyBO
+    public class SkillFamilyBO : BaseBO
     {
         public int SkillFamilyId { get; set; }
 

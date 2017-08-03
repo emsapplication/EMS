@@ -1,40 +1,42 @@
-﻿using EMS.DataAccessLayer.ServiceContract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EMS.BusinessLogicLayer.ServiceContract;
 using EMS.BusinessObjects;
-using EMSEntity = EMS.DataAccessLayer.DataEntityModel;
-using EMS.BusinessLogicLayer.ServiceContract;
+using EMS.DataAccessLayer.Operations;
+using EMS.DataAccessLayer.ServiceContract;
+using System.Collections.Generic;
 
 namespace EMS.BusinessLogicLayer.Operations
 {
     public class VerticalsBL : IVerticalsBL
     {
+        IVerticalsDA oVerticals;
+        public VerticalsBL()
+        {
+            oVerticals = new VerticalsDA();
+        }
+
         public int AddVerticals(VerticalsBO obj)
         {
-            throw new NotImplementedException();
+            return oVerticals.AddVerticals(obj);
         }
 
         public int DeleteVerticals(int id)
         {
-            throw new NotImplementedException();
+            return oVerticals.DeleteVerticals(id);
         }
 
         public List<VerticalsBO> GetAllVerticals()
         {
-            throw new NotImplementedException();
+            return oVerticals.GetAllVerticals();
         }
 
         public VerticalsBO GetVerticalsById(int id)
         {
-            throw new NotImplementedException();
+            return oVerticals.GetVerticalsById(id);
         }
 
         public int UpdateVerticals(VerticalsBO obj)
         {
-            throw new NotImplementedException();
+            return oVerticals.UpdateVerticals(obj);
         }
     }
 }

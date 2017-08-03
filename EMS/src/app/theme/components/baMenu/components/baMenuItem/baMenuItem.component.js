@@ -16,6 +16,8 @@ var BaMenuItem = (function () {
         this.itemHover = new core_1.EventEmitter();
         this.toggleSubMenu = new core_1.EventEmitter();
     }
+    BaMenuItem.prototype.selectedMenu = function (leftmenuitem) {
+    };
     BaMenuItem.prototype.onHoverItem = function ($event) {
         this.itemHover.emit($event);
     };

@@ -1,40 +1,43 @@
-﻿using EMS.DataAccessLayer.ServiceContract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EMS.BusinessLogicLayer.ServiceContract;
 using EMS.BusinessObjects;
-using EMSEntity = EMS.DataAccessLayer.DataEntityModel;
-using EMS.BusinessLogicLayer.ServiceContract;
+using EMS.DataAccessLayer.Operations;
+using EMS.DataAccessLayer.ServiceContract;
+using System.Collections.Generic;
 
 namespace EMS.BusinessLogicLayer.Operations
 {
     public class ProjectRoleBL : IProjectRoleBL
     {
+
+        IProjectRoleDA oProjectRole;
+        public ProjectRoleBL()
+        {
+            oProjectRole = new ProjectRoleDA();
+        }
+
         public int AddProjectRole(ProjectRoleBO obj)
         {
-            throw new NotImplementedException();
+            return oProjectRole.AddProjectRole(obj);
         }
 
         public int DeleteProjectRole(int id)
         {
-            throw new NotImplementedException();
+            return oProjectRole.DeleteProjectRole(id);
         }
 
         public List<ProjectRoleBO> GetAllProjectRole()
         {
-            throw new NotImplementedException();
+            return oProjectRole.GetAllProjectRole();
         }
 
         public ProjectRoleBO GetProjectRoleById(int id)
         {
-            throw new NotImplementedException();
+            return oProjectRole.GetProjectRoleById(id);
         }
 
         public int UpdatProjectRole(ProjectRoleBO obj)
         {
-            throw new NotImplementedException();
+            return oProjectRole.UpdatProjectRole(obj);
         }
     }
 }

@@ -1,40 +1,44 @@
-﻿using EMS.DataAccessLayer.ServiceContract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EMS.BusinessLogicLayer.ServiceContract;
 using EMS.BusinessObjects;
-using EMSEntity = EMS.DataAccessLayer.DataEntityModel;
-using EMS.BusinessLogicLayer.ServiceContract;
+using EMS.DataAccessLayer.Operations;
+using EMS.DataAccessLayer.ServiceContract;
+using System.Collections.Generic;
 
 namespace EMS.BusinessLogicLayer.Operations
 {
     public class SkillFamilyBL : ISkillFamilyBL
     {
+
+        ISkillFamilyDA oSkillFamily;
+        public SkillFamilyBL()
+        {
+            oSkillFamily = new SkillFamilyDA();
+        }
+
         public int AddSkillFamily(SkillFamilyBO obj)
         {
-            throw new NotImplementedException();
+            return oSkillFamily.AddSkillFamily(obj);
         }
 
         public int DeleteSkillFamily(int id)
         {
-            throw new NotImplementedException();
+            return oSkillFamily.DeleteSkillFamily(id);
         }
 
         public List<SkillFamilyBO> GetAllSkillFamily()
         {
-            throw new NotImplementedException();
+            return oSkillFamily.GetAllSkillFamily();
         }
 
         public SkillFamilyBO GetSkillFamilyById(int id)
         {
-            throw new NotImplementedException();
+            return oSkillFamily.GetSkillFamilyById(id);
+
         }
 
         public int UpdatSkillFamily(SkillFamilyBO obj)
         {
-            throw new NotImplementedException();
+            return oSkillFamily.UpdatSkillFamily(obj);
         }
     }
 }

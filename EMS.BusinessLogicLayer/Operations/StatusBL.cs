@@ -1,40 +1,43 @@
-﻿using EMS.DataAccessLayer.ServiceContract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EMS.BusinessLogicLayer.ServiceContract;
 using EMS.BusinessObjects;
-using EMSEntity = EMS.DataAccessLayer.DataEntityModel;
-using EMS.BusinessLogicLayer.ServiceContract;
+using EMS.DataAccessLayer.Operations;
+using EMS.DataAccessLayer.ServiceContract;
+using System.Collections.Generic;
 
 namespace EMS.BusinessLogicLayer.Operations
 {
     public class StatusBL : IStatusBL
     {
+
+        IStatusDA oStatus;
+        public StatusBL()
+        {
+            oStatus = new StatusDA();
+        }
+
         public int AddStatus(StatusBO obj)
         {
-            throw new NotImplementedException();
+            return oStatus.AddStatus(obj);
         }
 
         public int DeleteStatus(int id)
         {
-            throw new NotImplementedException();
+            return oStatus.DeleteStatus(id);
         }
 
         public List<StatusBO> GetAllStatus()
         {
-            throw new NotImplementedException();
+            return oStatus.GetAllStatus();
         }
 
         public StatusBO GetStatusById(int id)
         {
-            throw new NotImplementedException();
+            return oStatus.GetStatusById(id);
         }
 
         public int UpdatStatus(StatusBO obj)
         {
-            throw new NotImplementedException();
+            return oStatus.UpdatStatus(obj);
         }
     }
 }

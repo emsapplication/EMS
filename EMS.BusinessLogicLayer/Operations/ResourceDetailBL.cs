@@ -1,40 +1,42 @@
-﻿using EMS.DataAccessLayer.ServiceContract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EMS.BusinessLogicLayer.ServiceContract;
 using EMS.BusinessObjects;
-using EMSEntity = EMS.DataAccessLayer.DataEntityModel;
-using EMS.BusinessLogicLayer.ServiceContract;
+using EMS.DataAccessLayer.ServiceContract;
+using System.Collections.Generic;
 
 namespace EMS.DataAccessLayer.Operations
 {
     public class ResourceDetailBL : IResourceDetailBL
     {
+
+        IResourceDetailDA oResourceDetail;
+        public ResourceDetailBL()
+        {
+            oResourceDetail = new ResourceDetailDA();
+        }
+
         public int AddResourceDetail(ResourceDetailBO obj)
         {
-            throw new NotImplementedException();
+            return oResourceDetail.AddResourceDetail(obj);
         }
 
         public int DeleteResourceDetail(int id)
         {
-            throw new NotImplementedException();
+            return oResourceDetail.DeleteResourceDetail(id);
         }
 
         public List<ResourceDetailBO> GetAllResourceDetail()
         {
-            throw new NotImplementedException();
+            return oResourceDetail.GetAllResourceDetail();
         }
 
         public ResourceDetailBO GetResourceDetailById(int id)
         {
-            throw new NotImplementedException();
+            return oResourceDetail.GetResourceDetailById(id);
         }
 
         public int UpdatResourceDetail(ResourceDetailBO obj)
         {
-            throw new NotImplementedException();
+            return oResourceDetail.UpdatResourceDetail(obj);
         }
     }
 }

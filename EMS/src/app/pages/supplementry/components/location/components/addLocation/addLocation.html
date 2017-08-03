@@ -1,19 +1,18 @@
-﻿<form>
-  <div class="row">
+﻿  <div class="row">
     <div class="col-md-12">
       <ba-card cardTitle="Add Location" baCardClass="with-scroll">
         <div class="form-group row">
           <label for="locationName" class="col-md-2 control-label">Name</label>
 
           <div class="col-md-10">
-            <input type="text" class="form-control" id="locationName" placeholder="Location Name">
+            <input type="text" class="form-control" id="locationName" [(ngModel)]="locationModel.Location" placeholder="Location Name">
           </div>
         </div>
         <div class="form-group row">
           <label for="description" class="col-md-2 control-label">Description</label>
 
           <div class="col-md-10">
-            <textarea placeholder="Description" class="form-control" id="description"></textarea>
+            <textarea placeholder="Description" class="form-control" id="description" [(ngModel)]="locationModel.Description"></textarea>
           </div>
         </div>
 
@@ -41,8 +40,6 @@
     </ba-card>
   </div>
   </div>
-
-</form>
 
 
 

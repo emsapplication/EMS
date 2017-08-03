@@ -7,34 +7,42 @@ using System.Threading.Tasks;
 using EMS.BusinessObjects;
 using EMSEntity = EMS.DataAccessLayer.DataEntityModel;
 using EMS.BusinessLogicLayer.ServiceContract;
+using EMS.DataAccessLayer.Operations;
 
 namespace EMS.BusinessLogicLayer.Operations
 {
     public class LeaveTypeBL : ILeaveTypeBL
     {
+
+        ILeaveTypeDA oLeaveType;
+        public LeaveTypeBL()
+        {
+            oLeaveType = new LeaveTypeDA();
+        }
+
         public int AddLeaveType(LeaveTypeBO obj)
         {
-            throw new NotImplementedException();
+            return oLeaveType.AddLeaveType(obj);
         }
 
         public int DeleteLeaveType(int leaveTypeid)
         {
-            throw new NotImplementedException();
+            return oLeaveType.DeleteLeaveType(leaveTypeid);
         }
 
         public List<LeaveTypeBO> GetAllLeaveType()
         {
-            throw new NotImplementedException();
+            return oLeaveType.GetAllLeaveType();
         }
 
         public LeaveTypeBO GetLeaveTypeById(int leaveTypeid)
         {
-            throw new NotImplementedException();
+            return oLeaveType.GetLeaveTypeById(leaveTypeid);
         }
 
         public int UpdateLeaveType(LeaveTypeBO obj)
         {
-            throw new NotImplementedException();
+            return oLeaveType.UpdateLeaveType(obj);
         }
     }
 }
