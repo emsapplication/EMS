@@ -87,10 +87,16 @@ export class EMSApi {
             .post(url, body, this.options)
             .map(this.extractData)
             .catch(this.handleError);
-    }
+        }
 
-    updateService(url: string, param: any): Observable<any> {
-        let body = JSON.stringify(param);
+
+  
+
+
+updateService(url: string, param: any): Observable < any > {
+    let body = JSON.stringify(param);
+
+    
         return this.http
             .put(url, body, this.options)
             .map(this.extractData)
@@ -120,9 +126,16 @@ export class EMSApi {
             .catch(this.handleError);
     }
 
-    deleteServiceWithId(url: string, key: string, val: string): Observable<any> {
+    //deleteServiceWithId(url: string, key: string, val: string): Observable<any> {
+    //    return this.http
+    //        .delete(url + "/?" + key + "=" + val, this.options)
+    //        .map(this.extractData)
+    //        .catch(this.handleError);
+    //}
+
+    deleteServiceWithId(url: string, val: any): Observable<any> {
         return this.http
-            .delete(url + "/?" + key + "=" + val, this.options)
+            .delete(url+"/"+ val, this.options)
             .map(this.extractData)
             .catch(this.handleError);
     }

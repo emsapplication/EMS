@@ -35,9 +35,14 @@ var AppState = (function () {
         // internally mutate our state
         return this._state[prop] = value;
     };
+    AppState.prototype.remove = function (prop) {
+        // internally remove state
+        return this._state[prop] = null;
+    };
     AppState.prototype._clone = function (object) {
         // simple object clone
         return JSON.parse(JSON.stringify(object));
+        //return null;
     };
     return AppState;
 }());

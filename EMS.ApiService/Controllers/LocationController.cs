@@ -37,7 +37,8 @@ namespace EMS.ApiService.Controllers
         }
 
         // PUT api/values/5
-        public int Put(int id, [FromBody]LocationBO value)
+       [HttpPut]
+        public int Put([FromBody]LocationBO value)
         {
             return _iLocationsBL.UpdateLocations(value);
         }

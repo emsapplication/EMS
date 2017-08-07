@@ -39,6 +39,12 @@ var EMSApi = (function () {
             .map(this.extractData)
             .catch(this.handleError);
     };
+    EMSApi.prototype.getServiceWithId = function (url, param) {
+        return this.http
+            .get(url + "/" + param, this.options)
+            .map(this.extractData)
+            .catch(this.handleError);
+    };
     //    getServiceWithDynamicQueryTerm(url: string, key: string, val: string): Observable < any > {
     //        return this.http
     //            .get(url + "/?" + key + "=" + val, this.options)
