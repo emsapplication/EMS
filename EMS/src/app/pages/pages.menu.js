@@ -90,7 +90,7 @@ exports.PAGES_MENU = [
                         },
                     },
                     {
-                        path: 'buttons',
+                        path: 'designationDetails',
                         data: {
                             menu: {
                                 subicon: 'fa fa-arrow-circle-o-right',

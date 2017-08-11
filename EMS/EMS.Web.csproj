@@ -279,6 +279,8 @@
     <Content Include="src\app\pages\maps\components\leafletMaps\leafletMaps.html" />
     <Content Include="src\app\pages\maps\components\lineMaps\lineMaps.html" />
     <Content Include="src\app\pages\register\register.html" />
+    <Content Include="src\app\pages\supplementry\components\designation\components\addDesignation\addDesignation.html" />
+    <Content Include="src\app\pages\supplementry\components\designation\inputs.html" />
     <Content Include="src\app\pages\supplementry\components\location\components\addLocation\addLocation.html" />
     <Content Include="src\app\pages\supplementry\components\location\components\checkboxInputs\checkboxInputs.html" />
     <Content Include="src\app\pages\supplementry\components\location\components\groupInputs\groupInputs.html" />
@@ -593,6 +595,7 @@
     <Content Include="tslint.json" />
     <Content Include="src\app\pages\supplementry\components\location\components\selectInputs\selectInput.scss" />
     <Content Include="src\app\pages\tables\components\smartTables\smartTables.scss" />
+    <Content Include="src\app\pages\supplementry\components\designation\smartTables.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -622,6 +625,7 @@
     <TypeScriptCompile Include="src\app\app.service.ts" />
     <TypeScriptCompile Include="src\app\app.translation.module.ts" />
     <TypeScriptCompile Include="src\app\common\EMSApi.ts" />
+    <TypeScriptCompile Include="src\app\common\types\designation.ts" />
     <TypeScriptCompile Include="src\app\common\types\location.ts" />
     <TypeScriptCompile Include="src\app\global.state.ts" />
     <TypeScriptCompile Include="src\app\pages\accountdetail\accountdetails.component.ts" />
@@ -732,6 +736,10 @@
     <TypeScriptCompile Include="src\app\pages\register\register.component.ts" />
     <TypeScriptCompile Include="src\app\pages\register\register.module.ts" />
     <TypeScriptCompile Include="src\app\pages\register\register.routing.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\components\designation\components\addDesignation\addDesignation.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\components\designation\components\addDesignation\index.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\components\designation\index.ts" />
+    <TypeScriptCompile Include="src\app\pages\supplementry\components\designation\designation.component.ts" />
     <TypeScriptCompile Include="src\app\pages\supplementry\components\location\components\addLocation\addLocation.component.ts" />
     <TypeScriptCompile Include="src\app\pages\supplementry\components\location\components\addLocation\index.ts" />
     <TypeScriptCompile Include="src\app\pages\supplementry\components\location\components\checkboxInputs\checkboxInputs.component.ts" />

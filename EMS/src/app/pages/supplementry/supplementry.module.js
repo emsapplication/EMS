@@ -17,6 +17,8 @@ var supplementry_routing_1 = require("./supplementry.routing");
 var supplementry_component_1 = require("./supplementry.component");
 var location_1 = require("./components/location");
 var addLocation_component_1 = require("./components/location/components/addLocation/addLocation.component");
+var designation_component_1 = require("./components/designation/designation.component");
+var addDesignation_component_1 = require("./components/designation/components/addDesignation/addDesignation.component");
 var main_1 = require("ag-grid-angular/main");
 var smartTables_component_1 = require("../../pages/tables/components/smartTables/smartTables.component");
 var smartTables_service_1 = require("../../pages/tables/components/smartTables/smartTables.service");
@@ -49,10 +51,12 @@ SupplementryModule = __decorate([
             main_1.AgGridModule.withComponents([])
         ],
         declarations: [
-            location_1.Location,
+            smartTables_component_1.SmartTables,
             supplementry_component_1.Supplementry,
+            location_1.Location,
             addLocation_component_1.AddLocation,
-            smartTables_component_1.SmartTables
+            designation_component_1.Designation,
+            addDesignation_component_1.AddDesignation
             //StandardInputs,
             //ValidationInputs,
             //GroupInputs,

@@ -14,66 +14,61 @@ var router_1 = require("@angular/router");
 require("rxjs/add/operator/switchMap");
 var app_service_1 = require("../../../../../../app.service");
 var EMSApi_1 = require("../../../../../../common/EMSApi");
-var location_1 = require("../../../../../../common/types/location");
+var designation_1 = require("../../../../../../common/types/designation");
 var forms_1 = require("@angular/forms");
-var AddLocation = (function () {
-    function AddLocation(router, route, _state, _EMSApi) {
+var AddDesignation = (function () {
+    function AddDesignation(router, route, _state, _EMSApi) {
         this.router = router;
         this.route = route;
         this._state = _state;
         this._EMSApi = _EMSApi;
-        this.locationModel = new location_1.Location();
+        this.designationModel = new designation_1.Designation();
         this.isShowSucess = false;
         this.isShowError = false;
         this.locationForm = new forms_1.FormGroup({
             name: new forms_1.FormControl()
         });
     }
-    AddLocation.prototype.ngOnInit = function () {
+    AddDesignation.prototype.ngOnInit = function () {
         var _this = this;
-        this.addLocation = "Add Location";
-        this._EMSApi.getServiceWithId("http://localhost/EMS.ApiService/api/location", this._state.get("LocationId")).subscribe(function (result) {
-            _this.addLocation = "Update Location";
-            _this.locationModel = result,
-                console.log(_this.locationModel.LocationId);
-            console.log(_this.locationModel.Description);
-            _this._state.remove("LocationId");
+        this.addLocation = "Add Designation";
+        this._EMSApi.getServiceWithId("http://localhost/EMS.ApiService/api/designation", this._state.get("DesignationId")).subscribe(function (result) {
+            _this.addLocation = "Update Designation";
+            _this.designationModel = result,
+                _this._state.remove("DesignationId");
         }, function (error) { return console.log(error); });
         //alert(this._state.get("LocationId"));
         //let id = this.route.snapshot.paramMap.get('id');
     };
-    AddLocation.prototype.isEmpty = function (obj) {
+    AddDesignation.prototype.isEmpty = function (obj) {
         for (var key in obj) {
             if (obj.hasOwnProperty(key))
                 return false;
         }
         return true;
     };
-    AddLocation.prototype.navigateToLocationList = function () {
+    AddDesignation.prototype.navigateToLocationList = function () {
         this.router.navigate(['..//locationList'], { relativeTo: this.route });
     };
-    AddLocation.prototype.SaveLocation = function () {
+    AddDesignation.prototype.SaveLocation = function () {
         var _this = this;
-        if (this.addLocation === "Update Location" && this.locationModel.LocationId) {
+        if (this.addLocation === "Update Designation" && this.designationModel.DesignationId) {
             console.log("update");
-            console.log(this.locationModel);
-            this._EMSApi.updateService("http://localhost/EMS.ApiService/api/location", this.locationModel).subscribe(function (result) {
+            console.log(this.designationModel);
+            this._EMSApi.updateService("http://localhost/EMS.ApiService/api/designation", this.designationModel).subscribe(function (result) {
                 if (result === 1) {
-                    //this.locationModel.LocationId = null;
-                    //this.locationModel.Location = "";
-                    //this.locationModel.Description = "";
                     _this.isShowSucess = true;
                     _this.isShowError = false;
                     _this.successMessage = "Record Updated Successfully";
                 }
             }, function (error) { return console.log(error); });
         }
-        else if (this.addLocation === "Add Location") {
+        else if (this.addLocation === "Add Designation") {
             console.log("save");
-            this._EMSApi.createService("http://localhost/EMS.ApiService/api/location", this.locationModel).subscribe(function (result) {
+            this._EMSApi.createService("http://localhost/EMS.ApiService/api/designation", this.designationModel).subscribe(function (result) {
                 if (result === 1) {
-                    _this.locationModel.Location = "";
-                    _this.locationModel.Description = "";
+                    _this.designationModel.DesignationName = "";
+                    _this.designationModel.ShortDesignation = "";
                     _this.invalidData = "";
                     _this.successMessage = "Record Saved Successfully";
                     _this.isShowSucess = true;
@@ -87,17 +82,17 @@ var AddLocation = (function () {
             this.invalidData = "Invalid Data";
         }
     };
-    return AddLocation;
+    return AddDesignation;
 }());
-AddLocation = __decorate([
+AddDesignation = __decorate([
     core_1.Component({
-        selector: 'addLocation',
-        templateUrl: './addLocation.html',
+        selector: 'addDesignation',
+        templateUrl: './addDesignation.html',
     }),
     __metadata("design:paramtypes", [router_1.Router,
         router_1.ActivatedRoute,
         app_service_1.AppState,
         EMSApi_1.EMSApi])
-], AddLocation);
-exports.AddLocation = AddLocation;
-//# sourceMappingURL=addLocation.component.js.map
+], AddDesignation);
+exports.AddDesignation = AddDesignation;
+//# sourceMappingURL=addDesignation.component.js.map

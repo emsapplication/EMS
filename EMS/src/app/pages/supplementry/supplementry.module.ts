@@ -10,10 +10,12 @@ import { routing } from './supplementry.routing';
 
 import { Supplementry } from './supplementry.component';
 import { Location } from './components/location';
-
 import { AddLocation } from './components/location/components/addLocation/addLocation.component';
-import {AgGridModule} from "ag-grid-angular/main";
+import { Designation } from './components/designation/designation.component';
+import { AddDesignation } from './components/designation/components/addDesignation/addDesignation.component';
 
+
+import {AgGridModule} from "ag-grid-angular/main";
 import { SmartTables } from '../../pages/tables/components/smartTables/smartTables.component';
 import { SmartTablesService } from '../../pages/tables/components/smartTables/smartTables.service';
 
@@ -42,10 +44,12 @@ Ng2SmartTableModule,
 AgGridModule.withComponents([])
   ],
   declarations: [
-    Location,
-    Supplementry,
-    AddLocation,
-SmartTables
+        SmartTables,
+        Supplementry,
+        Location,
+        AddLocation,
+        Designation,
+        AddDesignation
     //StandardInputs,
     //ValidationInputs,
     //GroupInputs,

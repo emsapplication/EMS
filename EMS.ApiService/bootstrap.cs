@@ -20,6 +20,9 @@ namespace EMS.ApiService
 
             // Register your types, for instance using the scoped lifestyle:
             container.Register<ILocationsBL, LocationsBL>(Lifestyle.Scoped);
+            container.Register<IDesignationBL, DesignationBL>(Lifestyle.Scoped);
+            container.Register<IStatusBL, StatusBL>(Lifestyle.Scoped);
+
 
             // This is an extension method from the integration package.
             container.RegisterWebApiControllers(GlobalConfiguration.Configuration);

@@ -14,14 +14,14 @@ var router_1 = require("@angular/router");
 var ng2_smart_table_1 = require("ng2-smart-table");
 var EMSApi_1 = require("../../../../common/EMSApi");
 var app_service_1 = require("../../../../app.service");
-var Location = (function () {
-    function Location(router, route, _EMSApi, _state) {
+var Designation = (function () {
+    function Designation(router, route, _EMSApi, _state) {
         this.router = router;
         this.route = route;
         this._EMSApi = _EMSApi;
         this._state = _state;
         this.query = '';
-        this.apiLink = 'http://localhost/EMS.ApiService/api/location';
+        this.apiLink = 'http://localhost/EMS.ApiService/api/designation';
         this.settings = {
             mode: 'external',
             hideSubHeader: true,
@@ -37,37 +37,37 @@ var Location = (function () {
                 confirmDelete: true
             },
             columns: {
-                Location: {
-                    title: 'First Name',
+                DesignationName: {
+                    title: 'Designation Name',
                     type: 'string'
                 },
-                Description: {
-                    title: 'Last Name',
+                ShortDesignation: {
+                    title: 'Short Designation',
                     type: 'string'
                 }
             }
         };
         this.source = new ng2_smart_table_1.LocalDataSource();
     }
-    Location.prototype.ngOnInit = function () {
+    Designation.prototype.ngOnInit = function () {
         this.bindData();
     };
-    Location.prototype.onDeleteConfirm = function (event) {
+    Designation.prototype.onDeleteConfirm = function (event) {
         var _this = this;
         if (window.confirm('Are you sure you want to delete?')) {
             //console.log(event.data.LocationId);
-            this._EMSApi.deleteServiceWithId(this.apiLink, event.data.LocationId).subscribe(function (result) { return _this.bindData(); }, function (error) { return _this.message = error; });
+            this._EMSApi.deleteServiceWithId(this.apiLink, event.data.DesignationId).subscribe(function (result) { return _this.bindData(); }, function (error) { return _this.message = error; });
         }
         else {
             event.confirm.reject();
         }
     };
-    Location.prototype.onSave = function (event) {
+    Designation.prototype.onSave = function (event) {
         //this.router.navigate(['..//addLocation', event.data.id]);
         //this.router.navigate(['..//addLocation'], { relativeTo: this.route });
-        this._state.set("LocationId", event.data.LocationId);
-        this.router.navigate(['..//location'], { relativeTo: this.route });
-        console.log("data", event.data.LocationId);
+        this._state.set("DesignationId", event.data.DesignationId);
+        this.router.navigate(['..//designation'], { relativeTo: this.route });
+        console.log("data", event.data.DesignationId);
     };
     //onDelete(event) {
     //console.log('on delete');
@@ -79,16 +79,16 @@ var Location = (function () {
     //}
     //}).catch(err => console.log(err));
     //}
-    Location.prototype.navgateToAddLocation = function () {
-        this.router.navigate(['..//location'], { relativeTo: this.route });
+    Designation.prototype.navgateToAddLocation = function () {
+        this.router.navigate(['..//designation'], { relativeTo: this.route });
     };
-    Location.prototype.bindData = function () {
+    Designation.prototype.bindData = function () {
         var _this = this;
-        this._EMSApi.getService("http://localhost/EMS.ApiService/api/location").subscribe(function (result) { return _this.source.load(result); }, function (error) { return _this.message = error; });
+        this._EMSApi.getService("http://localhost/EMS.ApiService/api/designation").subscribe(function (result) { return _this.source.load(result); }, function (error) { return _this.message = error; });
     };
-    return Location;
+    return Designation;
 }());
-Location = __decorate([
+Designation = __decorate([
     core_1.Component({
         selector: 'inputs',
         templateUrl: './inputs.html',
@@ -98,6 +98,6 @@ Location = __decorate([
         router_1.ActivatedRoute,
         EMSApi_1.EMSApi,
         app_service_1.AppState])
-], Location);
-exports.Location = Location;
-//# sourceMappingURL=location.component.js.map
+], Designation);
+exports.Designation = Designation;
+//# sourceMappingURL=designation.component.js.map

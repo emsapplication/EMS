@@ -2,9 +2,12 @@
 
 import { Supplementry } from './supplementry.component';
 import { Location } from './components/location/location.component';
+import { AddLocation } from './components/location/components/addLocation/addLocation.component';
+
+import { Designation } from './components/designation/designation.component';
+import { AddDesignation } from './components/designation/components/addDesignation/addDesignation.component';
 //import { Layouts } from './components/layouts/layouts.component';
 
-import { AddLocation } from './components/location/components/addLocation/addLocation.component';
 
 // noinspection TypeScriptValidateTypes
 const routes: Routes = [
@@ -13,7 +16,9 @@ const routes: Routes = [
     component: Supplementry,
     children: [
       { path: 'locationDetails', component: Location },
-      { path: 'location', component: AddLocation }
+      { path: 'location', component: AddLocation },
+      { path: 'designationDetails', component: Designation },
+      { path: 'designation', component: AddDesignation }
     ]
   }
 ];
