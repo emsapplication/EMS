@@ -1,48 +1,47 @@
 ﻿<form>
-  <div class="row">
-    <div class="col-md-12">
-      <ba-card cardTitle="{{addLocation}}" baCardClass="with-scroll">
-        <div class="form-group row">
-          <label for="locationName" class="col-md-2 control-label">Name</label>
+    <div class="row">
+        <div class="col-md-12">
+            <ba-card cardTitle="{{addLocation}}" baCardClass="with-scroll">
+                <div class="form-group row">
+                    <div class="col-md-5">
+                        <div  class="alert alert-success" *ngIf="isShowSucess">{{successMessage}}</div>
+                        <div class="alert alert-danger" *ngIf="isShowError">{{invalidData}}</div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="locationName" class="col-md-2 control-label">Name</label>
 
-          <div class="col-md-10">
-            <input type="text" class="form-control" name="locationName" id="locationName" [(ngModel)]="locationModel.Location" placeholder="Location Name" required>
-          </div>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" name="locationName" id="locationName" [(ngModel)]="locationModel.Location" placeholder="Location Name" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="description" class="col-md-2 control-label">Description</label>
+
+                    <div class="col-md-10">
+                        <textarea placeholder="Description" name="description" class="form-control" id="description" [(ngModel)]="locationModel.Description"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-2 control-label"></div>
+
+                    <div class="col-md-10">
+                        <button type="submit" class="btn btn-primary" (click)="SaveLocation()">Save Location</button>
+
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-3 control-label">
+                        <a routerLink="/pages/supplementry/locationDetails">Back To LocationList</a>
+                    </div>
+                </div>
+
+
+            </ba-card>
         </div>
-        <div class="form-group row">
-          <label for="description" class="col-md-2 control-label">Description</label>
-
-          <div class="col-md-10">
-            <textarea placeholder="Description" name="description" class="form-control" id="description" [(ngModel)]="locationModel.Description"></textarea>
-          </div>
-        </div>
-
-        <div class="form-group row">
-          <div class="col-md-2 control-label"></div>
-
-          <div class="col-md-10">
-            <button type="submit" class="btn btn-primary" (click)="SaveLocation()">Save Location</button>
-
-          </div>
-        </div>
-
-        <div class="form-group row">
-          <div class="col-md-3 control-label">
-            <a routerLink="/pages/supplementry/locationDetails">Back To LocationList</a>
-          </div>
-        </div>
-        <div class="form-group row">
-          <div class="col-md-2">
-          </div>
-          <div class="col-md-3">
-            <div class="alert-success">{{successMessage}}</div>
-            <div class="alert-danger">{{invalidData}}</div>
-          </div>
-        </div>
-
-      </ba-card>
     </div>
-  </div>
 </form>
 
 

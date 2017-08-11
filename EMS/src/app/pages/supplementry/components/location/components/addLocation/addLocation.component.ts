@@ -14,6 +14,8 @@ export class AddLocation {
     locationModel: Location = new Location();
     addLocation: string;
     successMessage: string;
+    isShowSucess: boolean = false;
+    isShowError: boolean = false;
     invalidData: string;
     locationForm: FormGroup;
 
@@ -63,10 +65,13 @@ export class AddLocation {
                 this.locationModel).subscribe(
                 result => {
                     if (result === 1) {
-                        this.locationModel.LocationId = null;
-                        this.locationModel.Location = "";
-                        this.locationModel.Description = "";
-                        this.successMessage = "Record Saved Successfully";
+                        //this.locationModel.LocationId = null;
+                        //this.locationModel.Location = "";
+                        //this.locationModel.Description = "";
+
+                        this.isShowSucess = true;
+                        this.isShowError = false;
+                        this.successMessage = "Record Updated Successfully";
 
                     }
                 },
@@ -82,12 +87,15 @@ export class AddLocation {
                         this.locationModel.Description = "";
                         this.invalidData = "";
                         this.successMessage = "Record Saved Successfully";
+                        this.isShowSucess = true;
+                        this.isShowError = false;
                     }
                 },
                 error => console.log(error));
         }
         else {
             this.successMessage = "";
+            this.isShowError = true;
             this.invalidData = "Invalid Data";
         }
     }

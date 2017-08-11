@@ -17,6 +17,7 @@ import { AppState, InternalStateType } from '../../../../app.service';
 export class Location {
 
     query: string = '';
+    apiLink: string = 'http://localhost/EMS.ApiService/api/location';
     message: string;
      settings = {
          mode: 'external',
@@ -61,8 +62,8 @@ export class Location {
 
     onDeleteConfirm(event: any): void {
         if (window.confirm('Are you sure you want to delete?')) {
-            console.log(event.data.LocationId);
-            this._EMSApi.deleteServiceWithId("http://localhost/EMS.ApiService/api/location",
+            //console.log(event.data.LocationId);
+            this._EMSApi.deleteServiceWithId(this.apiLink,
                 event.data.LocationId).subscribe(
                 result => this.bindData(),
                 error => this.message = <any>error);

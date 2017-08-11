@@ -15,6 +15,7 @@ require("rxjs/add/operator/switchMap");
 var app_service_1 = require("../../../../../../app.service");
 var EMSApi_1 = require("../../../../../../common/EMSApi");
 var location_1 = require("../../../../../../common/types/location");
+var forms_1 = require("@angular/forms");
 var AddLocation = (function () {
     function AddLocation(router, route, _state, _EMSApi) {
         this.router = router;
@@ -22,6 +23,9 @@ var AddLocation = (function () {
         this._state = _state;
         this._EMSApi = _EMSApi;
         this.locationModel = new location_1.Location();
+        this.locationForm = new forms_1.FormGroup({
+            name: new forms_1.FormControl()
+        });
     }
     AddLocation.prototype.ngOnInit = function () {
         var _this = this;
@@ -31,8 +35,8 @@ var AddLocation = (function () {
             _this.locationModel = result,
                 console.log(_this.locationModel.LocationId);
             console.log(_this.locationModel.Description);
+            _this._state.remove("LocationId");
         }, function (error) { return console.log(error); });
-        //this._state.remove("LocationId");
         //alert(this._state.get("LocationId"));
         //let id = this.route.snapshot.paramMap.get('id');
     };
@@ -45,6 +49,36 @@ var AddLocation = (function () {
     };
     AddLocation.prototype.navigateToLocationList = function () {
         this.router.navigate(['..//locationList'], { relativeTo: this.route });
+    };
+    AddLocation.prototype.SaveLocation = function () {
+        var _this = this;
+        if (this.addLocation === "Update Location" && this.locationModel.LocationId) {
+            console.log("update");
+            console.log(this.locationModel);
+            this._EMSApi.updateService("http://localhost/EMS.ApiService/api/location", this.locationModel).subscribe(function (result) {
+                if (result === 1) {
+                    _this.locationModel.LocationId = null;
+                    _this.locationModel.Location = "";
+                    _this.locationModel.Description = "";
+                    _this.successMessage = "Record Saved Successfully";
+                }
+            }, function (error) { return console.log(error); });
+        }
+        else if (this.addLocation === "Add Location") {
+            console.log("save");
+            this._EMSApi.createService("http://localhost/EMS.ApiService/api/location", this.locationModel).subscribe(function (result) {
+                if (result === 1) {
+                    _this.locationModel.Location = "";
+                    _this.locationModel.Description = "";
+                    _this.invalidData = "";
+                    _this.successMessage = "Record Saved Successfully";
+                }
+            }, function (error) { return console.log(error); });
+        }
+        else {
+            this.successMessage = "";
+            this.invalidData = "Invalid Data";
+        }
     };
     return AddLocation;
 }());
