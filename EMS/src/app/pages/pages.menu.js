@@ -67,6 +67,18 @@ exports.PAGES_MENU = [
                 },
             },
             {
+                path: 'importdata',
+                data: {
+                    menu: {
+                        title: 'general.menu.import_data',
+                        icon: 'fa fa-list',
+                        selected: false,
+                        expanded: false,
+                        order: 0,
+                    },
+                },
+            },
+            {
                 path: 'supplementry',
                 data: {
                     menu: {

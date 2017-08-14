@@ -25,15 +25,15 @@ var AddDesignation = (function () {
         this.designationModel = new designation_1.Designation();
         this.isShowSucess = false;
         this.isShowError = false;
-        this.locationForm = new forms_1.FormGroup({
+        this.designationForm = new forms_1.FormGroup({
             name: new forms_1.FormControl()
         });
     }
     AddDesignation.prototype.ngOnInit = function () {
         var _this = this;
-        this.addLocation = "Add Designation";
+        this.addDesignation = "Add Designation";
         this._EMSApi.getServiceWithId("http://localhost/EMS.ApiService/api/designation", this._state.get("DesignationId")).subscribe(function (result) {
-            _this.addLocation = "Update Designation";
+            _this.addDesignation = "Update Designation";
             _this.designationModel = result,
                 _this._state.remove("DesignationId");
         }, function (error) { return console.log(error); });
@@ -48,11 +48,11 @@ var AddDesignation = (function () {
         return true;
     };
     AddDesignation.prototype.navigateToLocationList = function () {
-        this.router.navigate(['..//locationList'], { relativeTo: this.route });
+        this.router.navigate(['..//designationList'], { relativeTo: this.route });
     };
-    AddDesignation.prototype.SaveLocation = function () {
+    AddDesignation.prototype.Savedesignation = function () {
         var _this = this;
-        if (this.addLocation === "Update Designation" && this.designationModel.DesignationId) {
+        if (this.addDesignation === "Update Designation" && this.designationModel.DesignationId) {
             console.log("update");
             console.log(this.designationModel);
             this._EMSApi.updateService("http://localhost/EMS.ApiService/api/designation", this.designationModel).subscribe(function (result) {
@@ -63,7 +63,7 @@ var AddDesignation = (function () {
                 }
             }, function (error) { return console.log(error); });
         }
-        else if (this.addLocation === "Add Designation") {
+        else if (this.addDesignation === "Add Designation") {
             console.log("save");
             this._EMSApi.createService("http://localhost/EMS.ApiService/api/designation", this.designationModel).subscribe(function (result) {
                 if (result === 1) {

@@ -19,6 +19,7 @@
     },
     "menu": {
       "dashboard": "Dashboard",
+      "import_data": "Import Data",
       "resource_detail" : "Resource Details",
       "account_detail" : "Account Details",
       "project_detail" : "Project Details",

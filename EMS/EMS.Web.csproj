@@ -273,6 +273,7 @@
     <Content Include="src\app\pages\forms\components\layouts\components\inlineForm\inlineForm.html" />
     <Content Include="src\app\pages\forms\components\layouts\components\withoutLabelsForm\withoutLabelsForm.html" />
     <Content Include="src\app\pages\forms\components\layouts\layouts.html" />
+    <Content Include="src\app\pages\imports\importdata.html" />
     <Content Include="src\app\pages\login\login.html" />
     <Content Include="src\app\pages\maps\components\bubbleMaps\bubbleMaps.html" />
     <Content Include="src\app\pages\maps\components\googleMaps\googleMaps.html" />
@@ -596,12 +597,14 @@
     <Content Include="src\app\pages\supplementry\components\location\components\selectInputs\selectInput.scss" />
     <Content Include="src\app\pages\tables\components\smartTables\smartTables.scss" />
     <Content Include="src\app\pages\supplementry\components\designation\smartTables.scss" />
+    <Content Include="src\app\pages\imports\importdata.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="src\app\pages\accountdetail\components\searchPanel\" />
     <Folder Include="src\app\pages\accountdetail\components\searchResult\" />
+    <Folder Include="src\app\pages\imports\components\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -709,6 +712,10 @@
     <TypeScriptCompile Include="src\app\pages\forms\forms.module.ts" />
     <TypeScriptCompile Include="src\app\pages\forms\forms.routing.ts" />
     <TypeScriptCompile Include="src\app\pages\forms\index.ts" />
+    <TypeScriptCompile Include="src\app\pages\imports\importdata.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\imports\importdata.module.ts" />
+    <TypeScriptCompile Include="src\app\pages\imports\importdata.routing.ts" />
+    <TypeScriptCompile Include="src\app\pages\imports\index.ts" />
     <TypeScriptCompile Include="src\app\pages\index.ts" />
     <TypeScriptCompile Include="src\app\pages\login\index.ts" />
     <TypeScriptCompile Include="src\app\pages\login\login.component.ts" />
