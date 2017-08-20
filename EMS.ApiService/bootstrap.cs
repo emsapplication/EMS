@@ -1,5 +1,6 @@
 ﻿using EMS.BusinessLogicLayer.Operations;
 using EMS.BusinessLogicLayer.ServiceContract;
+using EMS.DataAccessLayer.Operations;
 using SimpleInjector;
 using SimpleInjector.Integration.WebApi;
 using SimpleInjector.Lifestyles;
@@ -22,6 +23,8 @@ namespace EMS.ApiService
             container.Register<ILocationsBL, LocationsBL>(Lifestyle.Scoped);
             container.Register<IDesignationBL, DesignationBL>(Lifestyle.Scoped);
             container.Register<IStatusBL, StatusBL>(Lifestyle.Scoped);
+            container.Register<IResourceDetailBL, ResourceDetailBL>(Lifestyle.Scoped);
+
 
 
             // This is an extension method from the integration package.

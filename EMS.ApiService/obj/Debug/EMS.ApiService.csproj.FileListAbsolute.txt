@@ -86,6 +86,7 @@ D:\EMS\Application\EMS\EMS.ApiService\bin\EMS.DataAccessLayer.dll.config
 D:\EMS\Application\EMS\EMS.ApiService\obj\Debug\EMS.ApiService.csprojResolveAssemblyReference.cache
 D:\EMS\Application\EMS\EMS.ApiService\obj\Debug\EMS.ApiService.dll
 D:\EMS\Application\EMS\EMS.ApiService\obj\Debug\EMS.ApiService.pdb
+E:\developement\EMS\EMS\EMS.ApiService\obj\Debug\EMS.ApiService.csprojResolveAssemblyReference.cache
 E:\developement\EMS\EMS\EMS.ApiService\bin\ApplicationInsights.config
 E:\developement\EMS\EMS\EMS.ApiService\bin\roslyn\csc.exe
 E:\developement\EMS\EMS\EMS.ApiService\bin\roslyn\csc.exe.config
@@ -173,6 +174,5 @@ E:\developement\EMS\EMS\EMS.ApiService\bin\Microsoft.AI.ServerTelemetryChannel.x
 E:\developement\EMS\EMS\EMS.ApiService\bin\Microsoft.AI.WindowsServer.xml
 E:\developement\EMS\EMS\EMS.ApiService\bin\Microsoft.AI.Web.xml
 E:\developement\EMS\EMS\EMS.ApiService\bin\EMS.DataAccessLayer.pdb
-E:\developement\EMS\EMS\EMS.ApiService\obj\Debug\EMS.ApiService.csprojResolveAssemblyReference.cache
 E:\developement\EMS\EMS\EMS.ApiService\obj\Debug\EMS.ApiService.dll
 E:\developement\EMS\EMS\EMS.ApiService\obj\Debug\EMS.ApiService.pdb

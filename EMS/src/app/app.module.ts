@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateService } from '@ngx-translate/core';
+//import { FileUploadModule } from "ng2-file-upload";
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -17,6 +18,7 @@ import { EMSApi } from './common/EMSApi';
 import { GlobalState } from './global.state';
 import { NgaModule } from './theme/nga.module';
 import { PagesModule } from './pages/pages.module';
+//import { XlsxFileUploadComponent } from './pages/imports/components/xlsx-file-upload/xlsx-file-upload.component';
 
 
 // Application wide providers
@@ -38,7 +40,8 @@ export type StoreType = {
 @NgModule({
   bootstrap: [App],
   declarations: [
-    App
+      App,
+      //XlsxFileUploadComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,
@@ -49,6 +52,7 @@ export type StoreType = {
     NgaModule.forRoot(),
     NgbModule.forRoot(),
     PagesModule,
+   // FileUploadModule,
     routing
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection

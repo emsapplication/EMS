@@ -273,6 +273,8 @@
     <Content Include="src\app\pages\forms\components\layouts\components\inlineForm\inlineForm.html" />
     <Content Include="src\app\pages\forms\components\layouts\components\withoutLabelsForm\withoutLabelsForm.html" />
     <Content Include="src\app\pages\forms\components\layouts\layouts.html" />
+    <Content Include="src\app\pages\imports\components\xlsx-file-upload\xlsx-file-upload.component.css" />
+    <Content Include="src\app\pages\imports\components\xlsx-file-upload\xlsx-file-upload.component.html" />
     <Content Include="src\app\pages\imports\importdata.html" />
     <Content Include="src\app\pages\login\login.html" />
     <Content Include="src\app\pages\maps\components\bubbleMaps\bubbleMaps.html" />
@@ -604,7 +606,6 @@
     <Folder Include="Models\" />
     <Folder Include="src\app\pages\accountdetail\components\searchPanel\" />
     <Folder Include="src\app\pages\accountdetail\components\searchResult\" />
-    <Folder Include="src\app\pages\imports\components\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -712,6 +713,8 @@
     <TypeScriptCompile Include="src\app\pages\forms\forms.module.ts" />
     <TypeScriptCompile Include="src\app\pages\forms\forms.routing.ts" />
     <TypeScriptCompile Include="src\app\pages\forms\index.ts" />
+    <TypeScriptCompile Include="src\app\pages\imports\components\xlsx-file-upload\xlsx-file-upload.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\pages\imports\components\xlsx-file-upload\xlsx-file-upload.component.ts" />
     <TypeScriptCompile Include="src\app\pages\imports\importdata.component.ts" />
     <TypeScriptCompile Include="src\app\pages\imports\importdata.module.ts" />
     <TypeScriptCompile Include="src\app\pages\imports\importdata.routing.ts" />

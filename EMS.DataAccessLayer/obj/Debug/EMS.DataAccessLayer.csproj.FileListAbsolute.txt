@@ -10,3 +10,15 @@ D:\EMS\Application\EMS\EMS.DataAccessLayer\bin\Debug\EntityFramework.dll
 D:\EMS\Application\EMS\EMS.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
 D:\EMS\Application\EMS\EMS.DataAccessLayer\bin\Debug\EntityFramework.xml
 D:\EMS\Application\EMS\EMS.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\developement\EMS\EMS\EMS.DataAccessLayer\bin\Debug\EMS.DataAccessLayer.dll.config
+E:\developement\EMS\EMS\EMS.DataAccessLayer\bin\Debug\EMS.DataAccessLayer.dll
+E:\developement\EMS\EMS\EMS.DataAccessLayer\bin\Debug\EMS.DataAccessLayer.pdb
+E:\developement\EMS\EMS\EMS.DataAccessLayer\bin\Debug\EMS.BusinessObjects.dll
+E:\developement\EMS\EMS\EMS.DataAccessLayer\bin\Debug\EntityFramework.dll
+E:\developement\EMS\EMS\EMS.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\developement\EMS\EMS\EMS.DataAccessLayer\bin\Debug\EMS.BusinessObjects.pdb
+E:\developement\EMS\EMS\EMS.DataAccessLayer\bin\Debug\EntityFramework.xml
+E:\developement\EMS\EMS\EMS.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\developement\EMS\EMS\EMS.DataAccessLayer\obj\Debug\EMS.DataAccessLayer.csprojResolveAssemblyReference.cache
+E:\developement\EMS\EMS\EMS.DataAccessLayer\obj\Debug\EMS.DataAccessLayer.dll
+E:\developement\EMS\EMS\EMS.DataAccessLayer\obj\Debug\EMS.DataAccessLayer.pdb

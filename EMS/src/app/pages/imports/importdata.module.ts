@@ -6,15 +6,22 @@ import { FormsModule } from '@angular/forms';
 import { ImportDataComponent } from './importdata.component';
 import { routing } from './importdata.routing';
 
+import { FileUploadModule } from "ng2-file-upload";
+import { XlsxFileUploadComponent } from './components/xlsx-file-upload/xlsx-file-upload.component';
+
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
-    routing,
+      FormsModule,
+      FileUploadModule,
+      routing
+      //XlsxFileUploadComponent
   ],
    declarations: [
        ImportDataComponent,
+       XlsxFileUploadComponent,
+       //FileUploadModule,
   ],
   
 })

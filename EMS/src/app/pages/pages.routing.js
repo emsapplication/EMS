@@ -19,7 +19,7 @@ exports.routes = [
         children: [
             { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
             { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
-            { path: 'importdata', loadChildren: './import/importdata.module#importdataModule' },
+            { path: 'importdata', loadChildren: './imports/importdata.module#ImportDataModule' },
             { path: 'accountdetail', loadChildren: './accountdetail/accountdetails.module#AccountDetailsModule' },
             { path: 'editors', loadChildren: './editors/editors.module#EditorsModule' },
             { path: 'components', loadChildren: './components/components.module#ComponentsModule' },
