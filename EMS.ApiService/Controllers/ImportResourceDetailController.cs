@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Text.RegularExpressions;
 using System.Web.Http;
 
 namespace EMS.ApiService.Controllers
@@ -29,11 +30,56 @@ namespace EMS.ApiService.Controllers
             var v = ((Newtonsoft.Json.Linq.JObject)((Newtonsoft.Json.Linq.JContainer)tmp.payload).First);
             var dict = JsonConvert.DeserializeObject<Dictionary<string, object>>(v.ToString());
 
-         //  var val = dict.Keys.Last();
+            var val = (from o in dict
+                            where o.Key.Contains("AJ")
+                            select o.Key).Last();
 
-            var JsonLoac = ((from o in dict
-                             where o.Key.Contains("K")
-                             select JsonConvert.DeserializeObject<A>(o.Value.ToString())).ToList()).Select(o => o.v).Skip(1).Distinct(); ;
+            //var val = dict.Keys.Last();
+
+            int lastValue = Convert.ToInt32(Regex.Match(val, @"\d+").Value);
+
+
+            List<StageResourecDetailBO> oResourSeDetail = new List<StageResourecDetailBO>();
+
+
+            for (int i = 2; i <= lastValue; i++)
+            {
+                int j = 1;
+                //string A, B = "";
+                //foreach (var rec in dict)
+                //{
+
+                //    if(j == 37)
+
+                //        break;
+                //    }
+                //    j++;
+
+                //    var Aconv = JsonConvert.DeserializeObject<A>(rec.Value.ToString());
+                //    //if (Aconv.Value as A)
+                //    //{
+                //        if (rec.Key == "A" + i)
+                //        {
+                //            A = (Aconv).v;
+                //        }
+                //        else if (rec.Key == "B" + i)
+                //        {
+                //            B = (Aconv).v;
+                //            break;
+                //        }
+                //    //}
+                //}
+                var A = JsonConvert.DeserializeObject<A>(dict["A"+i].ToString());
+                var B = JsonConvert.DeserializeObject<A>(dict["B" + i].ToString());
+                var C = JsonConvert.DeserializeObject<A>(dict["C" + i].ToString());
+                oResourSeDetail.Add(new StageResourecDetailBO { ResourceID = A.v.ToString(), ResourceName = B.v.ToString() });
+
+
+            }
+
+            //var JsonLoac = ((from o in dict
+            //                 where o.Key.Contains("K")
+            //                 select JsonConvert.DeserializeObject<A>(o.Value.ToString())).ToList()).Select(o => o.v).Skip(1).Distinct(); ;
 
 
             //var Locations = from c in JsonLoac['v']
@@ -48,12 +94,12 @@ namespace EMS.ApiService.Controllers
             public string result { get; set; }
             public object payload { get; set; }
         }
-        
+
         public class Payload
         {
             public object a { get; set; }
         }
-       
+
 
         public class A
         {

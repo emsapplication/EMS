@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="EMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="EMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="AccountDetail">
     <Key>
       <PropertyRef Name="AccountDetailId" />
@@ -154,6 +154,47 @@
     <Property Name="Status" Type="varchar" MaxLength="10" />
     <Property Name="CreatedDate" Type="datetime" />
     <Property Name="CreatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="stg_ResourceDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ResourceID" Type="varchar" MaxLength="10" />
+    <Property Name="ResourceName" Type="varchar" MaxLength="100" />
+    <Property Name="DOJ" Type="varchar" MaxLength="100" />
+    <Property Name="Designation" Type="varchar" MaxLength="100" />
+    <Property Name="ShortDesignation" Type="varchar" MaxLength="100" />
+    <Property Name="TGGroup" Type="varchar" MaxLength="100" />
+    <Property Name="CGIExp" Type="varchar" MaxLength="10" />
+    <Property Name="PrevExp" Type="varchar" MaxLength="10" />
+    <Property Name="TotalExp" Type="varchar" MaxLength="10" />
+    <Property Name="MemberType" Type="varchar" MaxLength="50" />
+    <Property Name="Location" Type="varchar" MaxLength="50" />
+    <Property Name="Skillsfamily" Type="varchar" MaxLength="100" />
+    <Property Name="Competency" Type="varchar" MaxLength="50" />
+    <Property Name="Subcompetency" Type="varchar" MaxLength="100" />
+    <Property Name="SkillCategory" Type="varchar" MaxLength="100" />
+    <Property Name="HRBU" Type="varchar" MaxLength="100" />
+    <Property Name="ProjectID" Type="varchar" MaxLength="50" />
+    <Property Name="ProjectDescription" Type="varchar" MaxLength="100" />
+    <Property Name="PCBU" Type="varchar" MaxLength="50" />
+    <Property Name="AssignmentStartDt" Type="varchar" MaxLength="50" />
+    <Property Name="HoursPerDay" Type="varchar" MaxLength="50" />
+    <Property Name="ProjectRole" Type="varchar" MaxLength="50" />
+    <Property Name="employee_status" Type="varchar" MaxLength="50" />
+    <Property Name="ReleaseMonth" Type="varchar" MaxLength="50" />
+    <Property Name="ReportingManager" Type="varchar" MaxLength="100" />
+    <Property Name="PMName" Type="varchar" MaxLength="100" />
+    <Property Name="SPMName" Type="varchar" MaxLength="100" />
+    <Property Name="EDName" Type="varchar" MaxLength="100" />
+    <Property Name="GHName" Type="varchar" MaxLength="100" />
+    <Property Name="GLName" Type="varchar" MaxLength="100" />
+    <Property Name="SGLName" Type="varchar" MaxLength="100" />
+    <Property Name="PyramidAccount" Type="varchar" MaxLength="100" />
+    <Property Name="RMBU" Type="varchar" MaxLength="100" />
+    <Property Name="HR_BU" Type="varchar" MaxLength="50" />
+    <Property Name="DeptID" Type="varchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Subcompetency">
     <Key>
@@ -425,6 +466,7 @@
     <EntitySet Name="ShiftDetail" EntityType="Self.ShiftDetail" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SkillFamily" EntityType="Self.SkillFamily" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="stg_ResourceDetail" EntityType="Self.stg_ResourceDetail" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Subcompetency" EntityType="Self.Subcompetency" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="VacationDetails" EntityType="Self.VacationDetails" Schema="dbo" store:Type="Tables" />

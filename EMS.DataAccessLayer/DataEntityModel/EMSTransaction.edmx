@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="EMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="EMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="AccountDetail">
           <Key>
             <PropertyRef Name="AccountDetailId" />
@@ -159,6 +159,47 @@
           <Property Name="Status" Type="varchar" MaxLength="10" />
           <Property Name="CreatedDate" Type="datetime" />
           <Property Name="CreatedBy" Type="int" />
+        </EntityType>
+        <EntityType Name="stg_ResourceDetail">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ResourceID" Type="varchar" MaxLength="10" />
+          <Property Name="ResourceName" Type="varchar" MaxLength="100" />
+          <Property Name="DOJ" Type="varchar" MaxLength="100" />
+          <Property Name="Designation" Type="varchar" MaxLength="100" />
+          <Property Name="ShortDesignation" Type="varchar" MaxLength="100" />
+          <Property Name="TGGroup" Type="varchar" MaxLength="100" />
+          <Property Name="CGIExp" Type="varchar" MaxLength="10" />
+          <Property Name="PrevExp" Type="varchar" MaxLength="10" />
+          <Property Name="TotalExp" Type="varchar" MaxLength="10" />
+          <Property Name="MemberType" Type="varchar" MaxLength="50" />
+          <Property Name="Location" Type="varchar" MaxLength="50" />
+          <Property Name="Skillsfamily" Type="varchar" MaxLength="100" />
+          <Property Name="Competency" Type="varchar" MaxLength="50" />
+          <Property Name="Subcompetency" Type="varchar" MaxLength="100" />
+          <Property Name="SkillCategory" Type="varchar" MaxLength="100" />
+          <Property Name="HRBU" Type="varchar" MaxLength="100" />
+          <Property Name="ProjectID" Type="varchar" MaxLength="50" />
+          <Property Name="ProjectDescription" Type="varchar" MaxLength="100" />
+          <Property Name="PCBU" Type="varchar" MaxLength="50" />
+          <Property Name="AssignmentStartDt" Type="varchar" MaxLength="50" />
+          <Property Name="HoursPerDay" Type="varchar" MaxLength="50" />
+          <Property Name="ProjectRole" Type="varchar" MaxLength="50" />
+          <Property Name="employee_status" Type="varchar" MaxLength="50" />
+          <Property Name="ReleaseMonth" Type="varchar" MaxLength="50" />
+          <Property Name="ReportingManager" Type="varchar" MaxLength="100" />
+          <Property Name="PMName" Type="varchar" MaxLength="100" />
+          <Property Name="SPMName" Type="varchar" MaxLength="100" />
+          <Property Name="EDName" Type="varchar" MaxLength="100" />
+          <Property Name="GHName" Type="varchar" MaxLength="100" />
+          <Property Name="GLName" Type="varchar" MaxLength="100" />
+          <Property Name="SGLName" Type="varchar" MaxLength="100" />
+          <Property Name="PyramidAccount" Type="varchar" MaxLength="100" />
+          <Property Name="RMBU" Type="varchar" MaxLength="100" />
+          <Property Name="HR_BU" Type="varchar" MaxLength="50" />
+          <Property Name="DeptID" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Subcompetency">
           <Key>
@@ -430,6 +471,7 @@
           <EntitySet Name="ShiftDetail" EntityType="Self.ShiftDetail" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SkillFamily" EntityType="Self.SkillFamily" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="stg_ResourceDetail" EntityType="Self.stg_ResourceDetail" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Subcompetency" EntityType="Self.Subcompetency" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="VacationDetails" EntityType="Self.VacationDetails" Schema="dbo" store:Type="Tables" />
@@ -503,8 +545,7 @@
             <End Role="VacationDetails" EntitySet="VacationDetails" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="EMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -1039,7 +1080,49 @@
             <End Role="ResourceDetail" EntitySet="ResourceDetails" />
             <End Role="VacationDetails" EntitySet="VacationDetails" />
           </AssociationSet>
+          <EntitySet Name="stg_ResourceDetail" EntityType="EMSModel.stg_ResourceDetail" />
         </EntityContainer>
+        <EntityType Name="stg_ResourceDetail">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ResourceID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ResourceName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="DOJ" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Designation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ShortDesignation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TGGroup" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CGIExp" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="PrevExp" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="TotalExp" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="MemberType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Skillsfamily" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Competency" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Subcompetency" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="SkillCategory" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="HRBU" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ProjectID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ProjectDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PCBU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AssignmentStartDt" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HoursPerDay" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ProjectRole" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="employee_status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ReleaseMonth" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ReportingManager" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PMName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="SPMName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EDName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="GHName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="GLName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="SGLName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PyramidAccount" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="RMBU" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="HR_BU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DeptID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1267,6 +1350,48 @@
                 <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
                 <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
                 <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stg_ResourceDetail">
+            <EntityTypeMapping TypeName="EMSModel.stg_ResourceDetail">
+              <MappingFragment StoreEntitySet="stg_ResourceDetail">
+                <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+                <ScalarProperty Name="HR_BU" ColumnName="HR_BU" />
+                <ScalarProperty Name="RMBU" ColumnName="RMBU" />
+                <ScalarProperty Name="PyramidAccount" ColumnName="PyramidAccount" />
+                <ScalarProperty Name="SGLName" ColumnName="SGLName" />
+                <ScalarProperty Name="GLName" ColumnName="GLName" />
+                <ScalarProperty Name="GHName" ColumnName="GHName" />
+                <ScalarProperty Name="EDName" ColumnName="EDName" />
+                <ScalarProperty Name="SPMName" ColumnName="SPMName" />
+                <ScalarProperty Name="PMName" ColumnName="PMName" />
+                <ScalarProperty Name="ReportingManager" ColumnName="ReportingManager" />
+                <ScalarProperty Name="ReleaseMonth" ColumnName="ReleaseMonth" />
+                <ScalarProperty Name="employee_status" ColumnName="employee_status" />
+                <ScalarProperty Name="ProjectRole" ColumnName="ProjectRole" />
+                <ScalarProperty Name="HoursPerDay" ColumnName="HoursPerDay" />
+                <ScalarProperty Name="AssignmentStartDt" ColumnName="AssignmentStartDt" />
+                <ScalarProperty Name="PCBU" ColumnName="PCBU" />
+                <ScalarProperty Name="ProjectDescription" ColumnName="ProjectDescription" />
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+                <ScalarProperty Name="HRBU" ColumnName="HRBU" />
+                <ScalarProperty Name="SkillCategory" ColumnName="SkillCategory" />
+                <ScalarProperty Name="Subcompetency" ColumnName="Subcompetency" />
+                <ScalarProperty Name="Competency" ColumnName="Competency" />
+                <ScalarProperty Name="Skillsfamily" ColumnName="Skillsfamily" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="MemberType" ColumnName="MemberType" />
+                <ScalarProperty Name="TotalExp" ColumnName="TotalExp" />
+                <ScalarProperty Name="PrevExp" ColumnName="PrevExp" />
+                <ScalarProperty Name="CGIExp" ColumnName="CGIExp" />
+                <ScalarProperty Name="TGGroup" ColumnName="TGGroup" />
+                <ScalarProperty Name="ShortDesignation" ColumnName="ShortDesignation" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="DOJ" ColumnName="DOJ" />
+                <ScalarProperty Name="ResourceName" ColumnName="ResourceName" />
+                <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -11,6 +11,8 @@ var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
 var importdata_component_1 = require("./importdata.component");
 var importdata_routing_1 = require("./importdata.routing");
+var ng2_file_upload_1 = require("ng2-file-upload");
+var xlsx_file_upload_component_1 = require("./components/xlsx-file-upload/xlsx-file-upload.component");
 var ImportDataModule = (function () {
     function ImportDataModule() {
     }
@@ -21,10 +23,13 @@ ImportDataModule = __decorate([
         imports: [
             common_1.CommonModule,
             forms_1.FormsModule,
-            importdata_routing_1.routing,
+            ng2_file_upload_1.FileUploadModule,
+            importdata_routing_1.routing
+            //XlsxFileUploadComponent
         ],
         declarations: [
             importdata_component_1.ImportDataComponent,
+            xlsx_file_upload_component_1.XlsxFileUploadComponent,
         ],
     })
 ], ImportDataModule);

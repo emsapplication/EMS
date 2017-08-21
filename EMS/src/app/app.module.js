@@ -15,6 +15,7 @@ var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
 var router_1 = require("@angular/router");
 var ng_bootstrap_1 = require("@ng-bootstrap/ng-bootstrap");
+//import { FileUploadModule } from "ng2-file-upload";
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -26,6 +27,7 @@ var EMSApi_1 = require("./common/EMSApi");
 var global_state_1 = require("./global.state");
 var nga_module_1 = require("./theme/nga.module");
 var pages_module_1 = require("./pages/pages.module");
+//import { XlsxFileUploadComponent } from './pages/imports/components/xlsx-file-upload/xlsx-file-upload.component';
 // Application wide providers
 var APP_PROVIDERS = [
     app_service_1.AppState,
@@ -45,7 +47,7 @@ AppModule = __decorate([
     core_1.NgModule({
         bootstrap: [app_component_1.App],
         declarations: [
-            app_component_1.App
+            app_component_1.App,
         ],
         imports: [
             platform_browser_1.BrowserModule,
@@ -56,6 +58,7 @@ AppModule = __decorate([
             nga_module_1.NgaModule.forRoot(),
             ng_bootstrap_1.NgbModule.forRoot(),
             pages_module_1.PagesModule,
+            // FileUploadModule,
             app_routing_1.routing
         ],
         providers: [

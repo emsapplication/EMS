@@ -100,6 +100,9 @@
     <Compile Include="DataEntityModel\Status.cs">
       <DependentUpon>EMSTransaction.tt</DependentUpon>
     </Compile>
+    <Compile Include="DataEntityModel\stg_ResourceDetail.cs">
+      <DependentUpon>EMSTransaction.tt</DependentUpon>
+    </Compile>
     <Compile Include="DataEntityModel\Subcompetency.cs">
       <DependentUpon>EMSTransaction.tt</DependentUpon>
     </Compile>

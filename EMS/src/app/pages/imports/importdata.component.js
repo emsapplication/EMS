@@ -10,9 +10,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var rxjs_1 = require("rxjs");
+var EMSApi_1 = require("../../common/EMSApi");
 var ImportDataComponent = (function () {
-    function ImportDataComponent() {
+    function ImportDataComponent(_EMSApi) {
+        this._EMSApi = _EMSApi;
+        this.uploaderContent = new rxjs_1.BehaviorSubject('please drop file in');
     }
+    ImportDataComponent.prototype.xlsxUploaded = function (result) {
+        // this.uploaderContent.next(JSON.stringify(result));
+        console.log("save");
+        this._EMSApi.createService("http://localhost/ems.apiservice/api/ImportResourceDetail/", JSON.stringify(result)).subscribe(function (result) {
+            if (result === 1) {
+                //this.designationModel.DesignationName = "";
+                //this.designationModel.ShortDesignation = "";
+                //this.invalidData = "";
+                //  this.successMessage = "Record Saved Successfully";
+                //this.isShowSucess = true;
+                //this.isShowError = false;
+            }
+        }, function (error) { return console.log(error); });
+        // console.log(JSON.stringify(result));
+    };
     return ImportDataComponent;
 }());
 ImportDataComponent = __decorate([
@@ -21,7 +40,7 @@ ImportDataComponent = __decorate([
         styleUrls: ['./importdata.scss'],
         templateUrl: './importdata.html',
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [EMSApi_1.EMSApi])
 ], ImportDataComponent);
 exports.ImportDataComponent = ImportDataComponent;
 //# sourceMappingURL=importdata.component.js.map

@@ -55,6 +55,7 @@
     <Compile Include="ResourceDetailBO.cs" />
     <Compile Include="ShiftDetailBO.cs" />
     <Compile Include="SkillFamilyBO.cs" />
+    <Compile Include="StageResourecDetailBO.cs" />
     <Compile Include="StatusBO.cs" />
     <Compile Include="SubcompetencyBO.cs" />
     <Compile Include="VacationDetailsBO.cs" />

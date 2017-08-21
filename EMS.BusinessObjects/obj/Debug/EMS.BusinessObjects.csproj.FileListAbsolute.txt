@@ -7,3 +7,4 @@ E:\developement\EMS\EMS\EMS.BusinessObjects\bin\Debug\EMS.BusinessObjects.dll
 E:\developement\EMS\EMS\EMS.BusinessObjects\bin\Debug\EMS.BusinessObjects.pdb
 E:\developement\EMS\EMS\EMS.BusinessObjects\obj\Debug\EMS.BusinessObjects.dll
 E:\developement\EMS\EMS\EMS.BusinessObjects\obj\Debug\EMS.BusinessObjects.pdb
+E:\developement\EMS\EMS\EMS.BusinessObjects\obj\Debug\EMS.BusinessObjects.csprojResolveAssemblyReference.cache

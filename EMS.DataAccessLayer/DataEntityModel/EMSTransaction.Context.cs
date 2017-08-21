@@ -41,5 +41,6 @@ namespace EMS.DataAccessLayer.DataEntityModel
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<VacationDetail> VacationDetails { get; set; }
         public virtual DbSet<Vertical> Verticals { get; set; }
+        public virtual DbSet<stg_ResourceDetail> stg_ResourceDetail { get; set; }
     }
 }

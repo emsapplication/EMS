@@ -225,5 +225,47 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="stg_ResourceDetail">
+      <EntityTypeMapping TypeName="EMSModel.stg_ResourceDetail">
+        <MappingFragment StoreEntitySet="stg_ResourceDetail">
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="HR_BU" ColumnName="HR_BU" />
+          <ScalarProperty Name="RMBU" ColumnName="RMBU" />
+          <ScalarProperty Name="PyramidAccount" ColumnName="PyramidAccount" />
+          <ScalarProperty Name="SGLName" ColumnName="SGLName" />
+          <ScalarProperty Name="GLName" ColumnName="GLName" />
+          <ScalarProperty Name="GHName" ColumnName="GHName" />
+          <ScalarProperty Name="EDName" ColumnName="EDName" />
+          <ScalarProperty Name="SPMName" ColumnName="SPMName" />
+          <ScalarProperty Name="PMName" ColumnName="PMName" />
+          <ScalarProperty Name="ReportingManager" ColumnName="ReportingManager" />
+          <ScalarProperty Name="ReleaseMonth" ColumnName="ReleaseMonth" />
+          <ScalarProperty Name="employee_status" ColumnName="employee_status" />
+          <ScalarProperty Name="ProjectRole" ColumnName="ProjectRole" />
+          <ScalarProperty Name="HoursPerDay" ColumnName="HoursPerDay" />
+          <ScalarProperty Name="AssignmentStartDt" ColumnName="AssignmentStartDt" />
+          <ScalarProperty Name="PCBU" ColumnName="PCBU" />
+          <ScalarProperty Name="ProjectDescription" ColumnName="ProjectDescription" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="HRBU" ColumnName="HRBU" />
+          <ScalarProperty Name="SkillCategory" ColumnName="SkillCategory" />
+          <ScalarProperty Name="Subcompetency" ColumnName="Subcompetency" />
+          <ScalarProperty Name="Competency" ColumnName="Competency" />
+          <ScalarProperty Name="Skillsfamily" ColumnName="Skillsfamily" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="MemberType" ColumnName="MemberType" />
+          <ScalarProperty Name="TotalExp" ColumnName="TotalExp" />
+          <ScalarProperty Name="PrevExp" ColumnName="PrevExp" />
+          <ScalarProperty Name="CGIExp" ColumnName="CGIExp" />
+          <ScalarProperty Name="TGGroup" ColumnName="TGGroup" />
+          <ScalarProperty Name="ShortDesignation" ColumnName="ShortDesignation" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="DOJ" ColumnName="DOJ" />
+          <ScalarProperty Name="ResourceName" ColumnName="ResourceName" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

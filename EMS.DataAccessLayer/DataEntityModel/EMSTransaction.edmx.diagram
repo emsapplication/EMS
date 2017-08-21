@@ -38,6 +38,7 @@
         <AssociationConnector Association="EMSModel.FK_ResourceDetail_Status" ManuallyRouted="false" />
         <AssociationConnector Association="EMSModel.FK_ResourceDetail_Subcompetency" ManuallyRouted="false" />
         <AssociationConnector Association="EMSModel.FK_VacationDetails_ResourceDetail" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="EMSModel.stg_ResourceDetail" Width="1.5" PointX="6.375" PointY="10.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
