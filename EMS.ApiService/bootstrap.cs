@@ -24,6 +24,7 @@ namespace EMS.ApiService
             container.Register<IDesignationBL, DesignationBL>(Lifestyle.Scoped);
             container.Register<IStatusBL, StatusBL>(Lifestyle.Scoped);
             container.Register<IResourceDetailBL, ResourceDetailBL>(Lifestyle.Scoped);
+            container.Register<IImportRecordBL, ImportRecordBL>(Lifestyle.Scoped);
 
 
 

@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using EMS.BusinessObjects;
 using EMSEntity = EMS.DataAccessLayer.DataEntityModel;
+using EMS.DataAccessLayer.Operations;
 
 namespace EMS.DataAccessLayer.Operations
 {

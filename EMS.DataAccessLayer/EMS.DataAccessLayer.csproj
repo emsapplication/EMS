@@ -117,6 +117,7 @@
     </Compile>
     <Compile Include="Operations\CompetencyDA.cs" />
     <Compile Include="Operations\DesignationDA.cs" />
+    <Compile Include="Operations\ImportRecordDA.cs" />
     <Compile Include="Operations\LeaveTypeDA.cs" />
     <Compile Include="Operations\ProjectRoleDA.cs" />
     <Compile Include="Operations\ResourceDetailDA.cs" />
@@ -130,6 +131,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceContract\ICompetencyDA.cs" />
     <Compile Include="ServiceContract\IDesignationDA.cs" />
+    <Compile Include="ServiceContract\IImportRecordDA.cs" />
     <Compile Include="ServiceContract\ILeaveTypeDA.cs" />
     <Compile Include="ServiceContract\IProjectRoleDA.cs" />
     <Compile Include="ServiceContract\IResourceDetailDA.cs" />
@@ -158,7 +160,9 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="EMSEntity\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="DataEntityModel\EMSTransaction.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

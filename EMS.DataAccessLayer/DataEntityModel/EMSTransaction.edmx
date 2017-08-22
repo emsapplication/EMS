@@ -165,41 +165,41 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="ResourceID" Type="varchar" MaxLength="10" />
-          <Property Name="ResourceName" Type="varchar" MaxLength="100" />
-          <Property Name="DOJ" Type="varchar" MaxLength="100" />
-          <Property Name="Designation" Type="varchar" MaxLength="100" />
-          <Property Name="ShortDesignation" Type="varchar" MaxLength="100" />
-          <Property Name="TGGroup" Type="varchar" MaxLength="100" />
-          <Property Name="CGIExp" Type="varchar" MaxLength="10" />
-          <Property Name="PrevExp" Type="varchar" MaxLength="10" />
-          <Property Name="TotalExp" Type="varchar" MaxLength="10" />
-          <Property Name="MemberType" Type="varchar" MaxLength="50" />
-          <Property Name="Location" Type="varchar" MaxLength="50" />
-          <Property Name="Skillsfamily" Type="varchar" MaxLength="100" />
-          <Property Name="Competency" Type="varchar" MaxLength="50" />
-          <Property Name="Subcompetency" Type="varchar" MaxLength="100" />
-          <Property Name="SkillCategory" Type="varchar" MaxLength="100" />
-          <Property Name="HRBU" Type="varchar" MaxLength="100" />
-          <Property Name="ProjectID" Type="varchar" MaxLength="50" />
-          <Property Name="ProjectDescription" Type="varchar" MaxLength="100" />
-          <Property Name="PCBU" Type="varchar" MaxLength="50" />
-          <Property Name="AssignmentStartDt" Type="varchar" MaxLength="50" />
-          <Property Name="HoursPerDay" Type="varchar" MaxLength="50" />
-          <Property Name="ProjectRole" Type="varchar" MaxLength="50" />
-          <Property Name="employee_status" Type="varchar" MaxLength="50" />
-          <Property Name="ReleaseMonth" Type="varchar" MaxLength="50" />
-          <Property Name="ReportingManager" Type="varchar" MaxLength="100" />
-          <Property Name="PMName" Type="varchar" MaxLength="100" />
-          <Property Name="SPMName" Type="varchar" MaxLength="100" />
-          <Property Name="EDName" Type="varchar" MaxLength="100" />
-          <Property Name="GHName" Type="varchar" MaxLength="100" />
-          <Property Name="GLName" Type="varchar" MaxLength="100" />
-          <Property Name="SGLName" Type="varchar" MaxLength="100" />
-          <Property Name="PyramidAccount" Type="varchar" MaxLength="100" />
-          <Property Name="RMBU" Type="varchar" MaxLength="100" />
-          <Property Name="HR_BU" Type="varchar" MaxLength="50" />
-          <Property Name="DeptID" Type="varchar" MaxLength="50" />
+          <Property Name="ResourceID" Type="varchar" MaxLength="200" />
+          <Property Name="ResourceName" Type="varchar" MaxLength="200" />
+          <Property Name="DOJ" Type="varchar" MaxLength="200" />
+          <Property Name="Designation" Type="varchar" MaxLength="200" />
+          <Property Name="ShortDesignation" Type="varchar" MaxLength="200" />
+          <Property Name="TGGroup" Type="varchar" MaxLength="200" />
+          <Property Name="CGIExp" Type="varchar" MaxLength="200" />
+          <Property Name="PrevExp" Type="varchar" MaxLength="200" />
+          <Property Name="TotalExp" Type="varchar" MaxLength="200" />
+          <Property Name="MemberType" Type="varchar" MaxLength="200" />
+          <Property Name="Location" Type="varchar" MaxLength="200" />
+          <Property Name="Skillsfamily" Type="varchar" MaxLength="200" />
+          <Property Name="Competency" Type="varchar" MaxLength="200" />
+          <Property Name="Subcompetency" Type="varchar" MaxLength="200" />
+          <Property Name="SkillCategory" Type="varchar" MaxLength="200" />
+          <Property Name="HRBU" Type="varchar" MaxLength="200" />
+          <Property Name="ProjectID" Type="varchar" MaxLength="200" />
+          <Property Name="ProjectDescription" Type="varchar" MaxLength="200" />
+          <Property Name="PCBU" Type="varchar" MaxLength="200" />
+          <Property Name="AssignmentStartDt" Type="varchar" MaxLength="200" />
+          <Property Name="HoursPerDay" Type="varchar" MaxLength="200" />
+          <Property Name="ProjectRole" Type="varchar" MaxLength="200" />
+          <Property Name="employee_status" Type="varchar" MaxLength="200" />
+          <Property Name="ReleaseMonth" Type="varchar" MaxLength="200" />
+          <Property Name="ReportingManager" Type="varchar" MaxLength="200" />
+          <Property Name="PMName" Type="varchar" MaxLength="200" />
+          <Property Name="SPMName" Type="varchar" MaxLength="200" />
+          <Property Name="EDName" Type="varchar" MaxLength="200" />
+          <Property Name="GHName" Type="varchar" MaxLength="200" />
+          <Property Name="GLName" Type="varchar" MaxLength="200" />
+          <Property Name="SGLName" Type="varchar" MaxLength="200" />
+          <Property Name="PyramidAccount" Type="varchar" MaxLength="200" />
+          <Property Name="RMBU" Type="varchar" MaxLength="200" />
+          <Property Name="HR_BU" Type="varchar" MaxLength="200" />
+          <Property Name="DeptID" Type="varchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="Subcompetency">
           <Key>
@@ -1087,41 +1087,41 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="ResourceID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="ResourceName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="DOJ" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="Designation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="ShortDesignation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="TGGroup" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="CGIExp" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="PrevExp" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="TotalExp" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="MemberType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Skillsfamily" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="Competency" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Subcompetency" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="SkillCategory" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="HRBU" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="ProjectID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="ProjectDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="PCBU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="AssignmentStartDt" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="HoursPerDay" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="ProjectRole" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="employee_status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="ReleaseMonth" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="ReportingManager" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="PMName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="SPMName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="EDName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="GHName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="GLName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="SGLName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="PyramidAccount" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="RMBU" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="HR_BU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="DeptID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ResourceID" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ResourceName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="DOJ" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Designation" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ShortDesignation" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="TGGroup" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CGIExp" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="PrevExp" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="TotalExp" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="MemberType" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Skillsfamily" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Competency" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Subcompetency" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="SkillCategory" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="HRBU" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ProjectID" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ProjectDescription" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="PCBU" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="AssignmentStartDt" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="HoursPerDay" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ProjectRole" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="employee_status" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ReleaseMonth" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ReportingManager" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="PMName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="SPMName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="EDName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="GHName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="GLName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="SGLName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="PyramidAccount" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="RMBU" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="HR_BU" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="DeptID" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>

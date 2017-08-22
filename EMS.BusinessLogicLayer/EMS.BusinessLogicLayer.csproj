@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Operations\ImportRecordBL.cs" />
     <Compile Include="Operations\CompetencyBL.cs" />
     <Compile Include="Operations\DesignationBL.cs" />
     <Compile Include="Operations\LeaveTypeBL.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceContract\ICompetencyBL.cs" />
     <Compile Include="ServiceContract\IDesignationBL.cs" />
+    <Compile Include="ServiceContract\IImportRecordBL.cs" />
     <Compile Include="ServiceContract\ILeaveTypeBL.cs" />
     <Compile Include="ServiceContract\ILocationsBL.cs" />
     <Compile Include="ServiceContract\IProjectRoleBL.cs" />
